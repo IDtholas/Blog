@@ -1,12 +1,5 @@
 <?php
-
-/**
- * Created by PhpStorm.
- * User: DIAZ DE CDORCUERA
- * Date: 20/03/2017
- * Time: 15:26
- */
-class articlemanagers
+class ArticleManagers
 {
     protected $db;
 
@@ -14,6 +7,7 @@ class articlemanagers
     {
         $this->db = $db;
     }
+
 
     protected function add(Article $article)
     {
@@ -46,7 +40,7 @@ class articlemanagers
         }
 
         $requete = $this->db->query($sql);
-        $requete->setFetchMode(PDO::FETCH_CLASS | PDO::FETCH_PROPS_LATE, 'News');
+        $requete->setFetchMode(PDO::FETCH_CLASS | PDO::FETCH_PROPS_LATE, 'Article');
 
         $listeArticle = $requete->fetchAll();
 
@@ -88,6 +82,7 @@ class articlemanagers
 
         $requete->execute();
     }
+
     public function save(Article $article)
     {
         if ($article->isValid())
@@ -96,9 +91,8 @@ class articlemanagers
         }
         else
         {
-            throw new RuntimeException('L article doit être valide pour être enregistré');
+            throw new RuntimeException('La news doit être valide pour être enregistrée');
         }
     }
 }
-
 ?>

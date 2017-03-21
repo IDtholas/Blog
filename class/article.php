@@ -40,6 +40,17 @@ class article
             }
         }
     }
+
+    public function isNew()
+    {
+        return empty($this->id);
+    }
+
+    public function isValid()
+    {
+        return !(empty($this->auteur) || empty($this->titre) || empty($this->contenu));
+    }
+
     public function setId($id)
     {
         $this->id = (int) $id;
