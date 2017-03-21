@@ -1,3 +1,14 @@
+<html>
+    <head>
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+
+        </div>
+    </body>
+</html>
+
 <?php
 /**
  * Created by PhpStorm.
