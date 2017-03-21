@@ -68,7 +68,7 @@ if (isset($_POST['auteur']))
 </head>
 
 <body>
-<p><a href=".">Accéder à l'accueil du site</a></p>
+<p><a href="index.php">Accéder à l'accueil du site</a></p>
 
 <form action="admin.php" method="post">
     <p style="text-align: center">
