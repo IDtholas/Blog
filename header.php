@@ -5,7 +5,7 @@
             <div class="navbar-header">
                 <a class="navbar-brand" href="#">Les articles</a>
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Accueil</a></li>
+                    <li class="active"><a href="accueil.php">Accueil</a></li>
                     <li><a href="#">Biographie</a></li>
                     <li><a href="#">Me contacter</a></li>
                     <li><a href="#">Portefollio</a></li>
