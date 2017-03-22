@@ -81,19 +81,20 @@ include "header.php";
             <label for="contenu">Rédigez votre article:</label>
             <?php if (isset($erreurs) && in_array(Article::CONTENU_INVALIDE, $erreurs)) echo '<div class="alert alert-danger fade in">Le contenu est invalide.</div><br />'; ?>
             <textarea rows="8" cols="60" name="contenu" class="form-control" id="contenu"><?php if (isset($article)) echo $article->contenu(); ?></textarea>
+            <p class="help-block">Vous pouvez modifier la taille de la fenêtre.</p>
         </div>
         <?php
         if(isset($article) && !$article->isNew())
         {
             ?>
             <input type="hidden" name="id" class="form-control" value="<?= $article->id() ?>" />
-            <button type="submit" value="Modifier"  class="btn btn-default" name="modifier"> Modifier l'article</button>
+            <button type="submit" value="Modifier"  class="btn btn-primary" name="modifier"><span class="glyphicon glyphicon-ok-sign"></span> Modifier l'article</button>
             <?php
         }
         else
         {
             ?>
-            <button type="submit" class="btn btn-default">Enregistrez l'article</button>
+            <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-ok-sign"></span>Enregistrez l'article</button>
             <?php
         }
         ?>
