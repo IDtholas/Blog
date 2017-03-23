@@ -47,6 +47,8 @@ if (isset($_POST['auteur']))
 
 <html>
 <head>
+    <script src="tinymce/js/tinymce/tinymce.min.js"></script>
+    <script>tinymce.init({ selector:'textarea' });</script>
     <title>Accueil du site</title>
     <meta charset="utf-8" />
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -60,7 +62,10 @@ if (isset($_POST['auteur']))
 <?php
 include "header.php";
 ?>
-    <form action="administration.php" method="post">
+    <section class="col-sm-8">
+    <form class="well" action="administration.php" method="post">
+        <legende><h2>Ajoutez un article: </h2></legende>
+        <fieldset>
         <?php
         if (isset($message))
         {
@@ -98,7 +103,9 @@ include "header.php";
             <?php
         }
         ?>
+        </fieldset>
     </form>
+    </section>
 
     <div class="row">
         <div class="col-lg-12"> <h2 style="text-align: center" class="jumbotron"> Il y a actuellement <?= $manager->count() ?> article. En voici la liste :</h2></div>

@@ -63,6 +63,32 @@ class Commentairemanagers
         return $listeCommentaire;
     }
 
+    public function getListSpe($debut = -1, $limite = -1, $id)
+    {
+        $sql = 'SELECT id, auteur, titre, contenu, dateAjout, dateModif FROM commentaire WHERE id_billet = :id ORDER BY id DESC';
+
+        if ($debut != -1 || $limite != -1)
+        {
+            $sql .= ' LIMIT '.(int) $limite.' OFFSET '.(int) $debut;
+        }
+
+        $requete = $this->db->prepare($sql);
+        $requete->bindValue(':id', $id, PDO::PARAM_INT);
+        $requete->execute();
+        $requete->setFetchMode(PDO::FETCH_CLASS | PDO::FETCH_PROPS_LATE, 'Commentaire');
+
+        $listeCommentaire = $requete->fetchAll();
+
+        foreach ($listeCommentaire as $commentaire)
+        {
+            $commentaire->setDateAjout(new DateTime($commentaire->dateAjout()));
+            $commentaire->setDateModif(new DateTime($commentaire->dateModif()));
+        }
+
+        $requete->closeCursor();
+
+        return $listeCommentaire;
+    }
     public function getUnique($id)
     {
         $requete = $this->db->prepare('SELECT id, auteur, titre, contenu, dateAjout, dateModif FROM commentaire WHERE id = :id');
@@ -99,7 +125,7 @@ class Commentairemanagers
         }
         else
         {
-            throw new RuntimeException('La news doit être valide pour être enregistrée');
+            throw new RuntimeException('Le commentaire doit être valide pour être enregistré');
         }
     }
 }

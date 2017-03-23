@@ -44,7 +44,7 @@ include "header.php";
     }
 
     else{
-        foreach ($manager->getList(($_GET['p'] + 5),($_GET['p'] + 10)) as $article) {
+        foreach ($manager->getList((($_GET['p'] - 1) *5), 5) as $article) {
             if (strlen($article->contenu()) <= 200) {
                 $contenu = $article->contenu();
             } else {
