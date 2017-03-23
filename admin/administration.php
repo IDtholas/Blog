@@ -50,6 +50,7 @@ if (isset($_POST['auteur']))
     <script src="../js/tinymce/js/tinymce/tinymce.min.js"></script>
     <script>tinymce.init({
             selector: "textarea",
+            language : "fr_FR",
             theme: "modern",
             width: 680,
             height: 300,
@@ -150,6 +151,6 @@ if (isset($_POST['auteur']))
     <footer id="pied" >
 
         <div class="jumbotron" style="margin-top:25px;">
-            <a type="button" class="btn btn-primary" href="accueil.php"> Retournez à l'accueil</a>
+            <a type="button" class="btn btn-primary" href="../accueil.php"> Retournez à l'accueil</a>
         </div>
     </footer>

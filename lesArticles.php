@@ -63,7 +63,15 @@ include "header.php";
 
     for ($nbPage = 1; $nbPage-1 <= ($nbArticle / 5); $nbPage++)
     {
-          echo  '<li ><a href ="?p=',$nbPage,'" > ',$nbPage,'</a ></li >';
+        $pageActive = $_GET['p'];
+        if($pageActive == $nbPage)
+        {
+            echo  '<li class="active"><a href ="?p=',$nbPage,'" > ',$nbPage,'</a ></li >';
+        }
+        else
+        {
+            echo '<li><a href ="?p=', $nbPage, '" > ', $nbPage, '</a ></li >';
+        }
     }
 
     echo '</ul>';

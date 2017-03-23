@@ -91,7 +91,7 @@ class ArticleManagers
         }
         else
         {
-            throw new RuntimeException('La news doit être valide pour être enregistrée');
+            throw new RuntimeException('L article doit être valide pour être enregistrée');
         }
     }
 }

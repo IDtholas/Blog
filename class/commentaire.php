@@ -13,6 +13,7 @@ class Commentaire
     protected $id_billet;
     protected $auteur;
     protected $titre;
+    protected $moderation = FALSE;
     protected $contenu;
     protected $dateAjout;
     protected $dateModif;

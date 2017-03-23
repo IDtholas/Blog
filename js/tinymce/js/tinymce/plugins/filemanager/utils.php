@@ -37,7 +37,7 @@ function create_folder($path=false,$path_thumbs=false){
 	if ($path && !file_exists($path))
 		mkdir($path, 0777); // or even 01777 so you get the sticky bit set 
 	if($path_thumbs && !file_exists($path_thumbs)) 
-		mkdir($path_thumbs, 0777); // or even 01777 so you get the sticky bit set 
+		mkdir($path_thumbs, 0777, TRUE); // or even 01777 so you get the sticky bit set
 	umask($oldumask);
 }
 
