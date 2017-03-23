@@ -1,8 +1,8 @@
 <?php
-require 'class/articlemanagers.php';
-require 'class/article.php';
+require '../class/articlemanagers.php';
+require '../class/article.php';
 
-require 'connexion.php';
+require '../connexion.php';
 $manager = new ArticleManagers($db);
 
 if (isset($_GET['modifier']))
@@ -47,7 +47,7 @@ if (isset($_POST['auteur']))
 
 <html>
 <head>
-    <script src="js/tinymce/js/tinymce/tinymce.min.js"></script>
+    <script src="../js/tinymce/js/tinymce/tinymce.min.js"></script>
     <script>tinymce.init({
             selector: "textarea",
             theme: "modern",
@@ -64,8 +64,8 @@ if (isset($_POST['auteur']))
         });</script>
     <title>Accueil du site</title>
     <meta charset="utf-8" />
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" href="js/bootstrap.css">
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="../js/bootstrap.css">
     <style type="text/css">
         #pied{ text-align: center;}
     </style>
@@ -73,9 +73,22 @@ if (isset($_POST['auteur']))
 
 <body>
 <div class="container">
-<?php
-include "header.php";
-?>
+    <header class="page-header">
+        <h1> Blog de Jean Forteroche</h1>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="../lesArticles.php?p=1">Les articles</a>
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="accueil.php">Accueil</a></li>
+                        <li><a href="#">Biographie</a></li>
+                        <li><a href="#">Me contacter</a></li>
+                        <li><a href="#">Portefollio</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
     <section class="col-sm-8">
     <form class="well" action="administration.php" method="post">
         <legende><h2>Ajoutez un article: </h2></legende>
