@@ -16,7 +16,7 @@
         ?>
         <div class="row" id="stylo">
             <div class="col-lg-6">
-                <img src="image/stylo.jpeg"/>
+                <img src="images/stylo.jpeg"/>
             </div>
         <div class="col-lg-6">
             <h2> Bonjour et bienvenue sur le mon blog!</h2> </br>

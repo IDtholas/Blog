@@ -23,7 +23,7 @@ if (isset($_POST['auteur']))
     {
         $managerCom->save($commentaire);
 
-        $message = $commentaire->isNew() ? '<div class="alert alert-success fade in">Le Commentaire a bien été ajouté !</div>' : ' <div class="alert alert-success fade in">Le commentaire a bien été modifié ! </div>';
+        $message = '<div class="alert alert-success fade in">Le Commentaire a bien été ajouté !</div>';
     }
     else
     {

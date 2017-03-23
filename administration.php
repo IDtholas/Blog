@@ -47,11 +47,25 @@ if (isset($_POST['auteur']))
 
 <html>
 <head>
-    <script src="tinymce/js/tinymce/tinymce.min.js"></script>
-    <script>tinymce.init({ selector:'textarea' });</script>
+    <script src="js/tinymce/js/tinymce/tinymce.min.js"></script>
+    <script>tinymce.init({
+            selector: "textarea",
+            theme: "modern",
+            width: 680,
+            height: 300,
+            subfolder:"",
+            plugins: [
+                "advlist autolink link image lists charmap print preview hr anchor pagebreak",
+                "searchreplace wordcount visualblocks visualchars code insertdatetime media nonbreaking",
+                "table contextmenu directionality emoticons paste textcolor filemanager"
+            ],
+            image_advtab: true,
+            toolbar: "undo redo | bold italic underline | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | styleselect forecolor backcolor | link unlink anchor | image media | print preview code"
+        });</script>
     <title>Accueil du site</title>
     <meta charset="utf-8" />
     <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="js/bootstrap.css">
     <style type="text/css">
         #pied{ text-align: center;}
     </style>
@@ -85,7 +99,7 @@ include "header.php";
         <div class="form-group">
             <label for="contenu">Rédigez votre article:</label>
             <?php if (isset($erreurs) && in_array(Article::CONTENU_INVALIDE, $erreurs)) echo '<div class="alert alert-danger fade in">Le contenu est invalide.</div><br />'; ?>
-            <textarea rows="8" cols="60" name="contenu" class="form-control" id="contenu"><?php if (isset($article)) echo $article->contenu(); ?></textarea>
+            <textarea rows="17" cols="80" name="contenu" class="form-control" id="contenu"><?php if (isset($article)) echo $article->contenu(); ?></textarea>
             <p class="help-block">Vous pouvez modifier la taille de la fenêtre.</p>
         </div>
         <?php
