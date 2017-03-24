@@ -1,44 +1,8 @@
-<?php
-require 'class/article.php';
-require 'class/articlemanagers.php';
-require 'connexion.php';
-require 'class/commentaire.php';
-require 'class/commentairemanagers.php';
-$manager = new ArticleManagers($db);
-$managerCom = new Commentairemanagers($db);
-
-
-if (isset($_POST['auteur']))
-{
-    $commentaire = new Commentaire(
-        [
-            'id_billet' => $_GET['id'],
-            'auteur' => $_POST['auteur'],
-            'titre' => $_POST['titre'],
-            'contenu' => $_POST['contenu']
-        ]
-    );
-
-    if ($commentaire->isValid())
-    {
-        $managerCom->save($commentaire);
-
-        $message = '<div class="alert alert-success fade in">Le Commentaire a bien été ajouté !</div>';
-    }
-    else
-    {
-        $erreurs = $commentaire->erreurs();
-    }
-}
-
-?>
-
-<!DOCTYPE html>
 <html>
         <head>
             <title>Article du site</title>
             <meta charset="utf-8" />
-            <link href="css/bootstrap.css" rel="stylesheet">
+            <link href="../css/bootstrap.css" rel="stylesheet">
             <style type="text/css">
                 #pied{ text-align: center;}
             </style>
@@ -53,8 +17,6 @@ if (isset($_POST['auteur']))
         echo '<div class="row"> <div class="col-lg-12">', $message, '<br /></div></div>';
     }
 
-    $article = $manager->getUnique((int) $_GET['id']);
-
     echo '<p>Par <em>', $article->auteur(), '</em>, le ', $article->dateAjout()->format('d/m/Y à H\hi'), '</p>', "\n",
     '<h2>', $article->titre(), '</h2>', "\n",
     '<p>', nl2br($article->contenu()), '</p>', "\n";
@@ -66,7 +28,7 @@ if (isset($_POST['auteur']))
     ?>
             <div class="row"><div class="col-lg-12"><h2> Commentaires : </h2></div></div>
             <?php
-            foreach ($managerCom->getListSpe(0, 5, $_GET['id']) as $commentaire) {
+            foreach ($listeCom as $commentaire) {
                     $contenu = $commentaire->contenu();
                 echo '<h4> Par : ',$commentaire->auteur(), ' ', $commentaire->titre(), '</h4>', "\n",
                 '<p>', nl2br($contenu), '</p>';
@@ -74,7 +36,7 @@ if (isset($_POST['auteur']))
             ?>
             <div class="row">
                 <section class="col-sm-8">
-                    <form class="well" action="unArticle.php?id=<?php echo $article->id();?>" method="post" >
+                    <form class="well" action="controlleurUnArticle.php?id=<?php echo $article->id();?>" method="post" >
                         <legend>Si vous souhaitez laisser un commentaire.</legend>
                         <fieldset>
                             <label for="auteur">Votre nom :</label>

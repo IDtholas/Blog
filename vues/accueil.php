@@ -3,7 +3,7 @@
 <head>
     <title>Accueil du site</title>
     <meta charset="utf-8" />
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
     <style type="text/css">
         #pied{ text-align: center;}
     </style>
@@ -16,7 +16,7 @@
         ?>
         <div class="row" id="stylo">
             <div class="col-lg-6">
-                <img src="images/stylo.jpeg"/>
+                <img src="../images/stylo.jpeg"/>
             </div>
         <div class="col-lg-6">
             <h2> Bonjour et bienvenue sur le mon blog!</h2> </br>
