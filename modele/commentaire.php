@@ -11,12 +11,13 @@ class Commentaire
     protected $erreurs = [];
     protected $id;
     protected $id_billet;
+    protected $id_parent;
+    protected $depth;
     protected $auteur;
     protected $titre;
-    protected $moderation = FALSE;
+    protected $moderation = 0;
     protected $contenu;
     protected $dateAjout;
-    protected $dateModif;
 
     const AUTEUR_INVALIDE = 1;
     const TITRE_INVALIDE = 2;
@@ -42,13 +43,6 @@ class Commentaire
             }
         }
     }
-
-    public function isNew()
-    {
-        return empty($this->id);
-    }
-
-
     public function isValid()
     {
         return !(empty($this->auteur) || empty($this->titre) || empty($this->contenu));
@@ -108,11 +102,35 @@ class Commentaire
         $this->dateAjout = $dateAjout;
     }
 
-    public function setDateModif(DateTime $dateModif)
+    public function setModeration($moderation)
     {
-        $this->dateModif = $dateModif;
+        $this->moderation = $moderation;
     }
 
+    public function setId_parent($id_parent)
+    {
+        $this->id_parent = $id_parent;
+    }
+
+    public function setDepth($depth)
+    {
+        $this->depth = $depth;
+    }
+
+    public function moderation()
+    {
+        return $this->moderation;
+    }
+
+    public function id_parent()
+    {
+        return $this->id_parent;
+    }
+
+    public function depth()
+    {
+        return $this->depth;
+    }
 
     public function erreurs()
     {
@@ -148,10 +166,6 @@ class Commentaire
         return $this->dateAjout;
     }
 
-    public function dateModif()
-    {
-        return $this->dateModif;
-    }
 }
 
 ?>

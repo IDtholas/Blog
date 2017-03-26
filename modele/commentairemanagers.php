@@ -18,12 +18,15 @@ class Commentairemanagers
 
     protected function add(Commentaire $commentaire)
     {
-        $requete = $this->db->prepare('INSERT INTO commentaire(id_billet, auteur, titre, contenu, dateAjout, dateModif) VALUES(:id_billet, :auteur, :titre, :contenu, NOW(), NOW())');
+        $requete = $this->db->prepare('INSERT INTO commentaire(id_billet, auteur, titre, contenu, dateAjout, moderation, id_parent, depth) VALUES(:id_billet, :auteur, :titre, :contenu, NOW(),:moderation, :id_parent, :depth)');
 
         $requete->bindValue(':id_billet', $commentaire->id_billet());
         $requete->bindValue(':titre', $commentaire->titre());
         $requete->bindValue(':auteur', $commentaire->auteur());
         $requete->bindValue(':contenu', $commentaire->contenu());
+        $requete->bindValue('moderation', 0);
+        $requete->bindValue(':id_parent', $commentaire->id_parent());
+        $requete->bindValue('depth', $commentaire->depth());
 
         $requete->execute();
     }
@@ -40,7 +43,7 @@ class Commentairemanagers
 
     public function getList($debut = -1, $limite = -1)
     {
-        $sql = 'SELECT id, auteur, titre, contenu, dateAjout, dateModif FROM commentaire ORDER BY id DESC';
+        $sql = 'SELECT id, auteur, titre, contenu, dateAjout, moderation, id_parent, depth FROM commentaire ORDER BY id DESC';
 
         if ($debut != -1 || $limite != -1)
         {
@@ -48,14 +51,13 @@ class Commentairemanagers
         }
 
         $requete = $this->db->query($sql);
-        $requete->setFetchMode(PDO::FETCH_CLASS | PDO::FETCH_PROPS_LATE, 'Article');
+        $requete->setFetchMode(PDO::FETCH_CLASS | PDO::FETCH_PROPS_LATE, 'Commentaire');
 
         $listeCommentaire = $requete->fetchAll();
 
         foreach ($listeCommentaire as $commentaire)
         {
             $commentaire->setDateAjout(new DateTime($commentaire->dateAjout()));
-            $commentaire->setDateModif(new DateTime($commentaire->dateModif()));
         }
 
         $requete->closeCursor();
@@ -63,9 +65,9 @@ class Commentairemanagers
         return $listeCommentaire;
     }
 
-    public function getListSpe($debut = -1, $limite = -1, $id)
+    public function getListSpe($debut = -1, $limite = -1, $id_billet, $id_parent, $depth)
     {
-        $sql = 'SELECT id, auteur, titre, contenu, dateAjout, dateModif FROM commentaire WHERE id_billet = :id ORDER BY id DESC';
+        $sql = 'SELECT id, auteur, titre, contenu, dateAjout, moderation, id_parent, depth FROM commentaire WHERE id_billet = :id_billet AND id_parent = :id_parent AND depth = :depth ORDER BY id DESC';
 
         if ($debut != -1 || $limite != -1)
         {
@@ -73,7 +75,9 @@ class Commentairemanagers
         }
 
         $requete = $this->db->prepare($sql);
-        $requete->bindValue(':id', $id, PDO::PARAM_INT);
+        $requete->bindValue(':id_billet', $id_billet, PDO::PARAM_INT);
+        $requete->bindValue(':id_parent', $id_parent, PDO::PARAM_INT);
+        $requete->bindValue(':depth', $depth, PDO::PARAM_INT);
         $requete->execute();
         $requete->setFetchMode(PDO::FETCH_CLASS | PDO::FETCH_PROPS_LATE, 'Commentaire');
 
@@ -82,7 +86,6 @@ class Commentairemanagers
         foreach ($listeCommentaire as $commentaire)
         {
             $commentaire->setDateAjout(new DateTime($commentaire->dateAjout()));
-            $commentaire->setDateModif(new DateTime($commentaire->dateModif()));
         }
 
         $requete->closeCursor();
@@ -91,37 +94,24 @@ class Commentairemanagers
     }
     public function getUnique($id)
     {
-        $requete = $this->db->prepare('SELECT id, auteur, titre, contenu, dateAjout, dateModif FROM commentaire WHERE id = :id');
+        $requete = $this->db->prepare('SELECT id, auteur, titre, contenu, dateAjout, moderation FROM commentaire WHERE id = :id');
         $requete->bindValue(':id', (int) $id, PDO::PARAM_INT);
         $requete->execute();
 
-        $requete->setFetchMode(PDO::FETCH_CLASS | PDO::FETCH_PROPS_LATE, 'Article');
+        $requete->setFetchMode(PDO::FETCH_CLASS | PDO::FETCH_PROPS_LATE, 'Commentaire');
 
-        $article = $requete->fetch();
+        $commentaire = $requete->fetch();
 
         $commentaire->setDateAjout(new DateTime($commentaire->dateAjout()));
-        $commentaire->setDateModif(new DateTime($commentaire->dateModif()));
 
         return $commentaire;
-    }
-
-    protected function update(Commentaire $commentaire)
-    {
-        $requete = $this->db->prepare('UPDATE commentaire SET auteur = :auteur, titre = :titre, contenu = :contenu, dateModif = NOW() WHERE id = :id');
-
-        $requete->bindValue(':titre', $article->titre());
-        $requete->bindValue(':auteur', $article->auteur());
-        $requete->bindValue(':contenu', $article->contenu());
-        $requete->bindValue(':id', $article->id(), PDO::PARAM_INT);
-
-        $requete->execute();
     }
 
     public function save(Commentaire $commentaire)
     {
         if ($commentaire->isValid())
         {
-            $commentaire->isNew() ? $this->add($commentaire) : $this->update($commentaire);
+            $this->add($commentaire);
         }
         else
         {
