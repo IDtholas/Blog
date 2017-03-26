@@ -118,5 +118,16 @@ class Commentairemanagers
             throw new RuntimeException('Le commentaire doit être valide pour être enregistré');
         }
     }
+
+    public function update()
+    {
+        $requete = $this->db->prepare('UPDATE commentaire SET moderation = :moderation WHERE id = :id');
+
+        $requete->bindValue(':moderation', 1, PDO::PARAM_INT);
+        $requete->bindValue(':id', $_GET['moderer'], PDO::PARAM_INT);
+
+        $requete->execute();
+    }
+
 }
 ?>
