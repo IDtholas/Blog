@@ -36,6 +36,11 @@ class Commentairemanagers
         return $this->db->query('SELECT COUNT(*) FROM commentaire')->fetchColumn();
     }
 
+    public function countModeration()
+    {
+     return $this->db->query('SELECT COUNT(*) FROM commentaire WHERE moderation = 1') ->fetchColumn();
+    }
+
     public function delete($id)
     {
         $this->db->exec('DELETE FROM commentaire WHERE id = '.(int) $id);
@@ -94,7 +99,7 @@ class Commentairemanagers
     }
     public function getUnique($id)
     {
-        $requete = $this->db->prepare('SELECT id, auteur, titre, contenu, dateAjout, moderation FROM commentaire WHERE id = :id');
+        $requete = $this->db->prepare('SELECT id, auteur, titre, contenu, dateAjout, moderation, id_billet, id_parent, depth FROM commentaire WHERE id = :id');
         $requete->bindValue(':id', (int) $id, PDO::PARAM_INT);
         $requete->execute();
 
@@ -129,5 +134,26 @@ class Commentairemanagers
         $requete->execute();
     }
 
+    public function getComModeration()
+    {
+        $sql = 'SELECT id, auteur, titre, contenu, dateAjout, id_billet, id_parent, depth, moderation FROM commentaire WHERE moderation = :moderation ORDER BY id DESC';
+        $requete = $this->db->prepare($sql);
+        $requete->bindValue('moderation', 1, PDO::PARAM_INT);
+
+        $requete->execute();
+        $requete->setFetchMode(PDO::FETCH_CLASS | PDO::FETCH_PROPS_LATE, 'Commentaire');
+
+        $listeComModeration = $requete->fetchAll();
+
+        foreach ($listeComModeration as $commentaire)
+        {
+            $commentaire->setDateAjout(new DateTime($commentaire->dateAjout()));
+        }
+
+        $requete->closeCursor();
+
+        return $listeComModeration;
+
+    }
 }
 ?>

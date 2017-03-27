@@ -34,8 +34,6 @@ if (isset($_POST['auteur']))
     }
 }
 
-$reload = '';
-
 if(isset($_GET['moderer']))
 {
     $managerCom->update();

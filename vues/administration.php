@@ -44,15 +44,29 @@
         </nav>
     </header>
     <section class="col-sm-8">
-        <form class="well" action="controlleurAdministration.php" method="post">
+<?php
+if (isset($commentaire))
+{
+    echo '<p>Par <em>', $commentaire->auteur(), '</em>, le ', $commentaire->dateAjout()->format('d/m/Y à H\hi'), '</p>', "\n",
+    '<h2>', $commentaire->titre(), '</h2>', "\n",
+    '<p>', nl2br($commentaire->contenu()), '</p>', "\n";
+
+?>
+            <a href="controlleurAdministration.php?supprimerCom=<?php echo $commentaire->id();?>&p=1" class="btn btn-danger"><span class="glyphicon glyphicon-ok-sign"></span> Supprimez le commentaire.</a>
+        <?php
+}
+?>
+    </section>
+    <?php
+    if (isset($message))
+    {
+        echo '<div class="row"> <div class="col-lg-12">', $message, '<br /></div></div>';
+    }
+    ?>
+    <section class="col-sm-8">
+        <form class="well" action="controlleurAdministration.php?p=1" method="post">
             <legende><h2>Ajoutez un article: </h2></legende>
             <fieldset>
-                <?php
-                if (isset($message))
-                {
-                    echo '<div class="row"> <div class="col-lg-12">', $message, '<br /></div></div>';
-                }
-                ?>
                 <div class="form-group">
                     <label for="auteur">Auteur de l'article:</label>
                     <?php if (isset($erreurs) && in_array(Article::AUTEUR_INVALIDE, $erreurs)) echo ' <div class="alert alert-danger fade in"> L\'auteur est invalide.</div><br />'; ?>
@@ -95,10 +109,46 @@
     <table class="table">
         <tr><th>Auteur</th><th>Titre</th><th>Date d'ajout</th><th>Dernière modification</th><th>Action</th></tr>
         <?php
-        foreach ($manager->getList() as $article)
+        foreach ($listeArticle as $article)
         {
             echo '<tr><td>', $article->auteur(), '</td><td>', $article->titre(), '</td><td>', $article->dateAjout()->format('d/m/Y à H\hi'), '</td><td>',
-            ($article->dateAjout() == $article->dateModif() ? '-' : $article->dateModif()->format('d/m/Y à H\hi')), '</td><td><a type="button" class="btn btn-primary" href="?modifier=', $article->id(), '">Modifier</a> | <a type="button" class="btn btn-primary" href="?supprimer=', $article->id(), '">Supprimer</a></td></tr>', "\n";}
+            ($article->dateAjout() == $article->dateModif() ? '-' : $article->dateModif()->format('d/m/Y à H\hi')), '</td><td><a type="button" class="btn btn-primary" href="?modifier=', $article->id(),'&p=1">Modifier</a> | <a type="button" class="btn btn-primary" href="?supprimer=', $article->id(),'&p=1">Supprimer</a></td></tr>', "\n";
+        }
+
+        ?>
+    </table>
+    <?php
+    echo '<ul class="pagination" >';
+
+    for ($nbPage = 1; $nbPage-1 <= ($nbArticle / 5); $nbPage++)
+    {
+        $pageActive = $_GET['p'];
+        if($pageActive == $nbPage)
+        {
+            echo  '<li class="active"><a href ="?p=',$nbPage,'" > ',$nbPage,'</a ></li >';
+        }
+        else
+        {
+            echo '<li><a href ="?p=', $nbPage, '" > ', $nbPage, '</a ></li >';
+        }
+    }
+
+    echo '</ul>';
+    ?>
+
+    <div class="row">
+        <div class="col-lg-12"> <h2 style="text-align: center" class="jumbotron"> Il y a actuellement <?= $managerCom->countModeration() ?> commentaire à modérer. En voici la liste :</h2></div>
+    </div>
+
+    <table class="table">
+        <tr><th>Auteur</th><th>Titre</th><th>Date d'ajout</th><th>Action</th></tr>
+        <?php
+        foreach ($listeComModeration as $commentaire)
+        {
+            echo '<tr><td>', $commentaire->auteur(), '</td><td>', $commentaire->titre(), '</td><td>', $commentaire->dateAjout()->format('d/m/Y à H\hi'), '</td>
+            <td><a type="button" class="btn btn-primary" href="?moderer=', $commentaire->id(),'&p=1"> apercu du commentaire</a> | <a type="button" class="btn btn-primary" href="?supprimerCom=', $commentaire->id(),'&p=1">Supprimer</a></td></tr>', "\n";
+        }
+
         ?>
     </table>
     <footer id="pied" >

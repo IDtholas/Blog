@@ -57,25 +57,25 @@
             foreach ($listeCom as $commentaire) {
                     $contenu = $commentaire->contenu();
                 echo '<h4> Par : ',$commentaire->auteur(), ' ', $commentaire->titre(), '</h4>', "\n",
-                '<p>', nl2br($contenu), '</p><a class="btn btn-primary" href="controlleurUnArticle.php?id=',$article->id(),'&moderer=1"> Signalez un commentaire inapproprié. </a> <a class="btn btn-primary" href="controlleurUnArticle.php?id=', $article->id(),'&id_parent=', $commentaire->id(),'&depthParent=', $commentaire->depth(),'">Répondre</a>';
+                '<p>', nl2br($contenu), '</p><a class="btn btn-primary" href="controlleurUnArticle.php?id=',$article->id(),'&moderer=',$commentaire->id(),'"> Signalez un commentaire inapproprié. </a> <a class="btn btn-primary" href="controlleurUnArticle.php?id=', $article->id(),'&id_parent=', $commentaire->id(),'&depthParent=', $commentaire->depth(),'">Répondre</a>';
 
                 foreach ( $managerCom->getListSpe(0,5, $_GET['id'], $commentaire->id(), 2) as $reponse1)
                 {
                     $contenu = $reponse1->contenu();
                     echo '<h4> Par : ',$reponse1->auteur(), ' ', $reponse1->titre(), '</h4>', "\n",
-                    '<p>', nl2br($contenu), '</p><a class="btn btn-primary" href="controlleurUnArticle.php?id=', $article->id(),'&id_parent=', $commentaire->id(),'&depthParent=', $reponse1->depth(),'">Répondre</a>';
+                    '<p>', nl2br($contenu), '</p><a class="btn btn-primary" href="controlleurUnArticle.php?id=', $article->id(),'&id_parent=', $reponse1->id(),'&depthParent=', $reponse1->depth(),'">Répondre</a>';
 
-                    foreach ( $managerCom->getListSpe(0,5, $_GET['id'], $commentaire->id(), 3) as $reponse2)
+                    foreach ( $managerCom->getListSpe(0,5, $_GET['id'], $reponse1->id(), 3) as $reponse2)
                     {
                         $contenu = $reponse2->contenu();
                         echo '<h4> Par : ',$reponse2->auteur(), ' ', $reponse2->titre(), '</h4>', "\n",
-                        '<p>', nl2br($contenu), '</p><a class="btn btn-primary" href="controlleurUnArticle.php?id=', $article->id(),'&id_parent=', $commentaire->id(),'&depthParent=', $reponse2->depth(),'">Répondre</a>';
+                        '<p>', nl2br($contenu), '</p><a class="btn btn-primary" href="controlleurUnArticle.php?id=', $article->id(),'&id_parent=', $reponse2->id(),'&depthParent=', $reponse2->depth(),'">Répondre</a>';
 
-                        foreach ( $managerCom->getListSpe(0,5, $_GET['id'], $commentaire->id(), 4) as $reponse3)
+                        foreach ( $managerCom->getListSpe(0,5, $_GET['id'], $reponse2->id(), 4) as $reponse3)
                         {
                             $contenu = $reponse3->contenu();
                             echo '<h4> Par : ',$reponse3->auteur(), ' ', $reponse3->titre(), '</h4>', "\n",
-                            '<p>', nl2br($contenu), '</p><a class="btn btn-primary" href="controlleurUnArticle.php?id=', $article->id(),'&id_parent=', $commentaire->id(),'&depthParent=', $reponse3->depth(),'">C est fini c est tout</a>';
+                            '<p>', nl2br($contenu), '</p><a class="btn btn-primary" href="controlleurUnArticle.php?id=', $article->id(),'&id_parent=', $reponse3->id(),'&depthParent=', $reponse3->depth(),'">C est fini c est tout</a>';
 
                         }
                     }
