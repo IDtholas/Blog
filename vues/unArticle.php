@@ -138,7 +138,7 @@
                             </li></br>
                             <ul class="comments">
 
-                                <?php foreach ($managerCom->getListSpe(0, 5, $_GET['id'], $commentaire->id(), 2) as $reponse1)
+                                <?php foreach ($this->managerCom->getListSpe(0, 5, $_GET['id'], $commentaire->id(), 2) as $reponse1)
                                 {
                                 $contenu = $reponse1->contenu(); ?>
                                 <li class="reponse1">
@@ -154,7 +154,7 @@
                                 </li></br>
                                 <ul class="comments">
 
-                                    <?php foreach ($managerCom->getListSpe(0, 5, $_GET['id'], $reponse1->id(), 3) as $reponse2) {
+                                    <?php foreach ($this->managerCom->getListSpe(0, 5, $_GET['id'], $reponse1->id(), 3) as $reponse2) {
                                         $contenu = $reponse2->contenu(); ?>
                                         <li class="reponse2">
                                             <div class="post-comments">

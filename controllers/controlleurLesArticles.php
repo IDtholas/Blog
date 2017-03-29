@@ -1,11 +1,7 @@
 <?php
-require '../modele/article.php';
-require '../modele/articlemanagers.php';
-require '../modele/connexion.php';
-$manager = new ArticleManagers($db);
+require '../modeleControllers/ControlleurLesArticles.php';
 
-$nbArticle = $manager->count();
-$listeArticle = $manager->getList((($_GET['p'] - 1) *5), 5);
+$ctrlLesArticles = new ControlleurLesArticles();
+$ctrlLesArticles->lesArticles();
 
-require '../vues/lesArticles.php';
 ?>

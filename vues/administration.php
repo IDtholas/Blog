@@ -133,7 +133,7 @@ if (isset($commentaire))
     </section>
 
     <div class="row">
-        <div class="col-lg-12"> <h2 style="text-align: center" class="jumbotron"> Il y a actuellement <?= $manager->count() ?> article. En voici la liste :</h2></div>
+        <div class="col-lg-12"> <h2 style="text-align: center" class="jumbotron"> Il y a actuellement <?= $this->manager->count() ?> article. En voici la liste :</h2></div>
     </div>
 
     <table class="table">
@@ -167,7 +167,7 @@ if (isset($commentaire))
     ?>
 
     <div class="row">
-        <div class="col-lg-12"> <h2 style="text-align: center" class="jumbotron"> Il y a actuellement <?= $managerCom->countModeration() ?> commentaire à modérer. En voici la liste :</h2></div>
+        <div class="col-lg-12"> <h2 style="text-align: center" class="jumbotron"> Il y a actuellement <?= $this->managerCom->countModeration() ?> commentaire à modérer. En voici la liste :</h2></div>
     </div>
 
     <table class="table">

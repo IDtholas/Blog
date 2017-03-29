@@ -1,3 +1,6 @@
 <?php
-require '../vues/accueil.php';
-?>
+require '../modeleControllers/ControlleurAccueil.php';
+
+$ctrlAccueil = New ControlleurAccueil();
+
+$ctrlAccueil->accueil();
