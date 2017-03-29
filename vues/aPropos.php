@@ -21,14 +21,9 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <style type="text/css">
-        #pied{ text-align: center;}
-    </style>
 </head>
 
-
 <body>
-
 <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -63,72 +58,38 @@
 </nav>
 <!-- Page Header -->
 <!-- Set your background image for this header on the line below. -->
-<header class="intro-header" style="background-image: url('images/lesArticlesBackground.jpg')">
+<header class="intro-header" style="background-image: url('images/aProposBackground.jpg')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="site-heading">
-                    <h1>Les articles</h1>
+                    <h1>A propos de moi</h1>
                     <hr class="small">
-                    <span class="subheading">Bonne lecture</span>
+                    <span class="subheading">Des précisions sur ma vie, mon parcours.</span>
                 </div>
             </div>
         </div>
     </div>
 </header>
 
-<div class="container">
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <h1 style="text-align:center">Liste des 5 derniers articles</h1><br>
-            <?php foreach ($listeArticle as $article) {
-            if (strlen($article->contenu()) <= 200) {
-                $contenu = $article->contenu();
-            } else {
-                $debut = substr($article->contenu(), 0, 200);
-                $debut = substr($debut, 0, strrpos($debut, ' ')) . '...';
-
-                $contenu = $debut;
-            }?>
-            <div class="post-preview">
-                <a href="index.php?action=unArticle&id=<?php echo $article->id();?>">
-                    <h2 class="post-title">
-                        <?php echo $article->titre();?>
-                    </h2>
-                    <h3 class="post-subtitle">
-                        <?php echo $contenu; ?>
-                    </h3>
-                </a>
-                <p class="post-meta">Rédigé par : <a href="controlleurAProposDeMoi.php"><?php echo $article->auteur();?></a> Le <?php echo $article->dateAjout()->format('d/m/Y à H\hi'); ?> .</p>
-            </div>
-            <hr>
-<?php
-            }
-            echo '<ul class="pager" >';
-
-            for ($nbPage = 1; $nbPage-1 <= ($nbArticle / 5); $nbPage++)
-            {
-                $pageActive = $_GET['p'];
-                if($pageActive == $nbPage)
-                {
-                    echo  '<li class="active"><a href ="?action=lesArticles&p=',$nbPage,'" > ',$nbPage,'</a ></li >';
-                }
-                else
-                {
-                    echo '<li><a href ="?action=lesArticles&p=', $nbPage, '" > ', $nbPage, '</a ></li >';
-                }
-            }
-
-            echo '</ul>';
-?>
-        </div>
+<div class="container ">
+    <img src = "images/photoJean.jpg" class = "img-circle img-responsive center-block">
+    <div class="col-lg-12 text-center">
+        <h2> Jean Forteroche, écrivrain fantaisiste</h2> </br>
+        <p> Ici vous trouverez boirgnoirngiozegnozieg oeizgnzoeginzegoi noziengoizegnzoieg. </p>
+        <p>
+            Blablablabla blablablablabla blabla bla blablabla Blablablabla blablablablabla blabla bla
+            Blablablabla blablablablabla blabla bla blablablaBlablablabla blablablablabla blabla bla blablabla
+            Blablablabla blablablablabla blabla bla blablablaBlablablabla blablablablabla blabla bla blablabla
+            Blablablabla blablablablabla blabla bla blablablaBlablablabla blablablablabla blabla bla blablabla
+        </p>
     </div>
 </div>
 <footer>
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
-                <a type="button" id="pied" class="btn btn-default" href="index.php?action=admin&p=1"> Accéder à l'interface d'administration</a>
+                <a type="button" class="btn btn-default center-div" href="index.php?action=admin&p=1"> Accéder à l'interface d'administration</a>
                 <ul class="list-inline text-center">
                     <li>
                         <a href="#">

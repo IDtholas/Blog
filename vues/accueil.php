@@ -21,9 +21,6 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <style type="text/css">
-        #pied{ text-align: center;}
-    </style>
 </head>
 
 <body>
@@ -48,7 +45,7 @@
                     <a href="index.php?action=lesArticles&p=1">Les articles</a>
                 </li>
                 <li>
-                    <a href="controlleurApropos.php">A propos de moi</a>
+                    <a href="index.php?action=aPropos">A propos de moi</a>
                 </li>
                 <li>
                     <a href="controlleurContact.php">Contact</a>
@@ -75,7 +72,7 @@
     </div>
 </header>
 
-<div class="row" id="stylo">
+<div class="container">
     <div class="col-lg-12 text-center">
         <h2> Bonjour et bienvenue sur le mon blog!</h2> </br>
         <p> Ici vous trouverez boirgnoirngiozegnozieg oeizgnzoeginzegoi noziengoizegnzoieg. </p>
@@ -113,7 +110,7 @@
                         <a href="#">
                                 <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                    <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
                                 </span>
                         </a>
                     </li>

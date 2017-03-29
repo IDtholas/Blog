@@ -48,7 +48,7 @@
                             <a href="index.php?action=lesArticles&p=1">Les articles</a>
                         </li>
                         <li>
-                            <a href="controlleurApropos.php">A propos de moi</a>
+                            <a href="index.php?action=aPropos">A propos de moi</a>
                         </li>
                         <li>
                             <a href="controlleurContact.php">Contact</a>
@@ -203,7 +203,7 @@
                                 <a href="#">
                                 <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                    <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
                                 </span>
                                 </a>
                             </li>

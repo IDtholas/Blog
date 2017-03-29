@@ -7,3 +7,4 @@ class ControlleurAccueil extends Controlleur
         require 'vues/accueil.php';
     }
 }
+?>
