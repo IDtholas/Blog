@@ -1,5 +1,4 @@
 <?php
-require 'Controlleur.php';
 
 class ControlleurAdmin extends Controlleur
 {

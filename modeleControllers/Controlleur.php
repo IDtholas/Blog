@@ -1,9 +1,4 @@
 <?php
-require '../modele/article.php';
-require '../modele/commentaire.php';
-require '../modele/articlemanagers.php';
-require '../modele/commentairemanagers.php';
-
 class Controlleur
 {
     protected $manager;

@@ -34,20 +34,20 @@
                 <span class="sr-only">Toggle navigation</span>
                 Menu <i class="fa fa-bars"></i>
             </button>
-            <a class="navbar-brand" href="../controllers/controlleurAccueil.php">Blog de Jean Forteroche</a>
+            <a class="navbar-brand" href="../index.php">Blog de Jean Forteroche</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a href="../controllers/controlleurAccueil.php">Accueil</a>
+                    <a href="../index.php">Accueil</a>
                 </li>
                 <li>
-                    <a href="../controllers/controlleurLesArticles.php?p=1">Les articles</a>
+                    <a href="../index.php?action=lesArticles&p=1">Les articles</a>
                 </li>
                 <li>
-                    <a href="../controllers/controlleurApropos.php">A propos de moi</a>
+                    <a href="../index.php?action=aPropos">A propos de moi</a>
                 </li>
                 <li>
                     <a href="../controllers/controlleurContact.php">Contact</a>
@@ -185,7 +185,7 @@ if (isset($commentaire))
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
-                    <a type="button" id="pied" class="btn btn-default" href="../controllers/controlleurAccueil.php"> Retournez à l'accueil</a>
+                    <a type="button" id="pied" class="btn btn-default" href="../index.php"> Retournez à l'accueil</a>
                     <ul class="list-inline text-center">
                         <li>
                             <a href="#">

@@ -1,5 +1,4 @@
 <?php
-require 'Controlleur.php';
 
 class ControlleurUnArticle extends Controlleur
 {
@@ -61,6 +60,6 @@ class ControlleurUnArticle extends Controlleur
         $listeCom= $this->managerCom->getListSpe(0, 5, $_GET['id'], 0, 1);
 
 
-        require '../vues/unArticle.php';
+        require 'vues/unArticle.php';
     }
 }

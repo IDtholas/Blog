@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Blog de Jean Forteroche">
     <meta name="author" content=" Jean Forteroche">
-    <title>Liste des articles du site</title>
-    <link href="../css/bootstrap.css" rel="stylesheet">
-    <link href="../startbootstrap-clean-blog-gh-pages/css/clean-blog.min.css" rel="stylesheet">
+    <title>Article du site</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="startbootstrap-clean-blog-gh-pages/css/clean-blog.min.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="../startbootstrap-clean-blog-gh-pages/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="startbootstrap-clean-blog-gh-pages/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
@@ -21,7 +22,7 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <style type="text/css">
-        #pied{ margin: auto;}
+        #pied{ text-align: center;}
     </style>
 </head>
 
@@ -35,17 +36,17 @@
                 <span class="sr-only">Toggle navigation</span>
                 Menu <i class="fa fa-bars"></i>
             </button>
-            <a class="navbar-brand" href="controlleurAccueil.php">Blog de Jean Forteroche</a>
+            <a class="navbar-brand" href="index.php">Blog de Jean Forteroche</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a href="controlleurAccueil.php">Accueil</a>
+                    <a href="index.php">Accueil</a>
                 </li>
                 <li>
-                    <a href="controlleurlesArticles.php?p=1">Les articles</a>
+                    <a href="index.php?action=lesArticles&p=1">Les articles</a>
                 </li>
                 <li>
                     <a href="controlleurApropos.php">A propos de moi</a>
@@ -61,7 +62,7 @@
 </nav>
 <!-- Page Header -->
 <!-- Set your background image for this header on the line below. -->
-<header class="intro-header" style="background-image: url('../images/lesArticlesBackground.jpg')">
+<header class="intro-header" style="background-image: url('images/lesArticlesBackground.jpg')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -89,7 +90,7 @@
                 $contenu = $debut;
             }?>
             <div class="post-preview">
-                <a href="controlleurUnArticle.php?id=<?php echo $article->id();?>">
+                <a href="index.php?action=unArticle&id=<?php echo $article->id();?>">
                     <h2 class="post-title">
                         <?php echo $article->titre();?>
                     </h2>
@@ -109,11 +110,11 @@
                 $pageActive = $_GET['p'];
                 if($pageActive == $nbPage)
                 {
-                    echo  '<li class="active"><a href ="?p=',$nbPage,'" > ',$nbPage,'</a ></li >';
+                    echo  '<li class="active"><a href ="?action=lesArticles&p=',$nbPage,'" > ',$nbPage,'</a ></li >';
                 }
                 else
                 {
-                    echo '<li><a href ="?p=', $nbPage, '" > ', $nbPage, '</a ></li >';
+                    echo '<li><a href ="?action=lesArticles&p=', $nbPage, '" > ', $nbPage, '</a ></li >';
                 }
             }
 
@@ -126,7 +127,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
-                <a type="button" id="pied" class="btn btn-default" href="../admin/controlleurAdministration.php?p=1"> Accéder à l'interface d'administration</a>
+                <a type="button" id="pied" class="btn btn-default" href="index.php?action=admin&p=1"> Accéder à l'interface d'administration</a>
                 <ul class="list-inline text-center">
                     <li>
                         <a href="#">
@@ -160,13 +161,13 @@
 </footer>
 
 <!-- jQuery -->
-<script src="../startbootstrap-clean-blog-gh-pages/vendor/jquery/jquery.min.js"></script>
+<script src="startbootstrap-clean-blog-gh-pages/vendor/jquery/jquery.min.js"></script>
 
 <!-- Bootstrap Core JavaScript -->
-<script src="../startbootstrap-clean-blog-gh-pages/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="startbootstrap-clean-blog-gh-pages/vendor/bootstrap/js/bootstrap.min.js"></script>
 
 <!-- Theme JavaScript -->
-<script src="../startbootstrap-clean-blog-gh-pages/js/clean-blog.min.js"></script>
+<script src="startbootstrap-clean-blog-gh-pages/js/clean-blog.min.js"></script>
 
 </body>
 </html>

@@ -6,12 +6,12 @@
     <meta name="description" content="Blog de Jean Forteroche">
     <meta name="author" content=" Jean Forteroche">
     <title>Article du site</title>
-    <link href="../css/style.css" rel="stylesheet">
-    <link href="../css/bootstrap.css" rel="stylesheet">
-    <link href="../startbootstrap-clean-blog-gh-pages/css/clean-blog.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="startbootstrap-clean-blog-gh-pages/css/clean-blog.min.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="../startbootstrap-clean-blog-gh-pages/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="startbootstrap-clean-blog-gh-pages/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
@@ -60,7 +60,7 @@
             <!-- /.container -->
         </nav>
 
-        <header class="intro-header" style="background-image: url('../images/unArticleBackground.jpg')">
+        <header class="intro-header" style="background-image: url('images/unArticleBackground.jpg')">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -76,7 +76,7 @@
         <?php
         if (isset($message))
         {
-            echo '<div class="row"> <div class="col-lg-12">', $message, '<br /></div></div>';
+            echo '<div class="row"> <div class="col-lg-12 text-center">', $message, '<br /></div></div>';
         }
         ?>
         <article>
@@ -101,7 +101,7 @@
                         <hr/>
                         <div class="row">
                             <section class="col-sm-8">
-                                <form class="well" action="controlleurUnArticle.php?id=<?php echo $article->id()?>" method="post" >
+                                <form class="well" action="index.php?action=unArticle&id=<?php echo $article->id()?>" method="post" >
                                     <legend> <?php echo $titreForm; ?> </legend>
                                     <fieldset>
                                         <label for="auteur">Votre nom :</label>
@@ -127,9 +127,9 @@
                             <li class="commentaire">
                                 <div>
                                     <p class="commentaire-tete">Par : <strong><?php echo $commentaire->auteur();?></strong> Le <?php echo $commentaire->dateAjout()->format('d/m/Y à H\hi'); ?>
-                                       <a href="controlleurUnArticle.php?id=<?php echo $article->id();?>&moderer=<?php echo $commentaire->id();?>">
+                                       <a href="index.php?action=unArticle&id=<?php echo $article->id();?>&moderer=<?php echo $commentaire->id();?>">
                                                     <i class="pull-right fa fa-exclamation-triangle fa-lg" data-toggle="tooltip" data-placement="top" title="Signalez un commentaire inapproprié"></i></a>
-                                        <a href="controlleurUnArticle.php?id=<?php echo $article->id(); ?>&id_parent=<?php echo $commentaire->id(); ?>&depthParent=<?php echo $commentaire->depth(); ?>">
+                                        <a href="index.php?action=unArticle&id=<?php echo $article->id(); ?>&id_parent=<?php echo $commentaire->id(); ?>&depthParent=<?php echo $commentaire->depth(); ?>">
                                                 <i class="pull-right fa fa-reply fa-lg " data-toggle="tooltip" data-placement="top" title="Répondre à ce commentaire"></i></a></p>
                                     <p>
                                         <?php echo nl2br($contenu); ?>
@@ -144,9 +144,9 @@
                                 <li class="reponse1">
                                     <div class="post-comments">
                                         <p class="commentaire-tete">Par : <strong><?php echo $reponse1->auteur();?></strong> Le <?php echo $reponse1->dateAjout()->format('d/m/Y à H\hi'); ?>
-                                            <a href="controlleurUnArticle.php?id=<?php echo $article->id();?>&moderer=<?php echo $reponse1->id();?>">
+                                            <a href="index.php?action=unArticle&id=<?php echo $article->id();?>&moderer=<?php echo $reponse1->id();?>">
                                                 <i class="pull-right fa fa-exclamation-triangle fa-lg" data-toggle="tooltip" data-placement="top" title="Signalez un commentaire inapproprié"></i></a>
-                                            <a href="controlleurUnArticle.php?id=<?php echo $article->id(); ?>&id_parent=<?php echo $reponse1->id(); ?>&depthParent=<?php echo $reponse1->depth(); ?>">
+                                            <a href="index.php?action=unArticle&id=<?php echo $article->id(); ?>&id_parent=<?php echo $reponse1->id(); ?>&depthParent=<?php echo $reponse1->depth(); ?>">
                                                 <i class="pull-right fa fa-reply fa-lg" data-toggle="tooltip" data-placement="top" title="Répondre à ce commentaire"></i></a></p>
                                             <?php echo  nl2br($contenu); ?>
                                         </p>
@@ -159,7 +159,7 @@
                                         <li class="reponse2">
                                             <div class="post-comments">
                                                 <p class="commentaire-tete">Par : <strong><?php echo $reponse2->auteur();?></strong> Le <?php echo $reponse2->dateAjout()->format('d/m/Y à H\hi'); ?>
-                                                    <a href="controlleurUnArticle.php?id=<?php echo $article->id();?>&moderer=<?php echo $reponse2->id();?>">
+                                                    <a href="index.php?action=unArticle&id=<?php echo $article->id();?>&moderer=<?php echo $reponse2->id();?>">
                                                         <i class="pull-right fa fa-exclamation-triangle fa-lg" data-toggle="tooltip" data-placement="top" title="Signalez un commentaire inapproprié"></i></a>
                                                 </p>
                                                     <?php echo  nl2br($contenu); ?>
@@ -181,7 +181,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
-                        <a type="button" id="pied" class="btn btn-default" href="../admin/controlleurAdministration.php?p=1"> Accéder à l'interface d'administration</a>
+                        <a type="button" id="pied" class="btn btn-default" href="index.php?action=admin&p=1"> Accéder à l'interface d'administration</a>
                         <ul class="list-inline text-center">
                             <li>
                                 <a href="#">
