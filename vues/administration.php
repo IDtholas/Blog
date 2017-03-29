@@ -73,6 +73,7 @@
         </div>
     </div>
 </header>
+<div class="row">
     <section class="col-sm-8">
 <?php
 if (isset($commentaire))
@@ -87,13 +88,14 @@ if (isset($commentaire))
 }
 ?>
     </section>
+</div>
     <?php
     if (isset($message))
     {
         echo '<div class="row"> <div class="col-lg-12 text-center">', $message, '<br /></div></div>';
     }
     ?>
-    <section class="col-sm-8">
+    <div class="container center-div">
         <form class="well" action="controlleurAdministration.php?p=1" method="post">
             <legende><h2>Ajoutez un article: </h2></legende>
             <fieldset>
@@ -110,7 +112,7 @@ if (isset($commentaire))
                 <div class="form-group">
                     <label for="contenu">Rédigez votre article:</label>
                     <?php if (isset($erreurs) && in_array(Article::CONTENU_INVALIDE, $erreurs)) echo '<div class="alert alert-danger fade in">Le contenu est invalide.</div><br />'; ?>
-                    <textarea rows="17" cols="80" name="contenu" class="form-control" id="contenu"><?php if (isset($article)) echo $article->contenu(); ?></textarea>
+                    <textarea rows="17" cols="120" name="contenu" class="form-control" id="contenu"><?php if (isset($article)) echo $article->contenu(); ?></textarea>
                     <p class="help-block">Vous pouvez modifier la taille de la fenêtre.</p>
                 </div>
                 <?php
@@ -130,7 +132,7 @@ if (isset($commentaire))
                 ?>
             </fieldset>
         </form>
-    </section>
+    </div>
 
     <div class="row">
         <div class="col-lg-12"> <h2 style="text-align: center" class="jumbotron"> Il y a actuellement <?= $this->manager->count() ?> article. En voici la liste :</h2></div>
@@ -142,7 +144,7 @@ if (isset($commentaire))
         foreach ($listeArticle as $article)
         {
             echo '<tr><td>', $article->auteur(), '</td><td>', $article->titre(), '</td><td>', $article->dateAjout()->format('d/m/Y à H\hi'), '</td><td>',
-            ($article->dateAjout() == $article->dateModif() ? '-' : $article->dateModif()->format('d/m/Y à H\hi')), '</td><td><a type="button" class="btn btn-primary" href="?modifier=', $article->id(),'&p=1">Modifier</a> | <a type="button" class="btn btn-primary" href="?supprimer=', $article->id(),'&p=1">Supprimer</a></td></tr>', "\n";
+            ($article->dateAjout() == $article->dateModif() ? '-' : $article->dateModif()->format('d/m/Y à H\hi')), '</td><td><a type="button" class="btn btn-default" href="?modifier=', $article->id(),'&p=1">Modifier</a> | <a type="button" class="btn btn-danger" href="?supprimer=', $article->id(),'&p=1">Supprimer</a></td></tr>', "\n";
         }
 
         ?>
@@ -176,7 +178,7 @@ if (isset($commentaire))
         foreach ($listeComModeration as $commentaire)
         {
             echo '<tr><td>', $commentaire->auteur(), '</td><td>', $commentaire->titre(), '</td><td>', $commentaire->dateAjout()->format('d/m/Y à H\hi'), '</td>
-            <td><a type="button" class="btn btn-primary" href="?moderer=', $commentaire->id(),'&p=1"> apercu du commentaire</a> | <a type="button" class="btn btn-primary" href="?supprimerCom=', $commentaire->id(),'&p=1">Supprimer</a></td></tr>', "\n";
+            <td><a type="button" class="btn btn-default" href="?moderer=', $commentaire->id(),'&p=1"> apercu du commentaire</a> | <a type="button" class="btn btn-danger" href="?supprimerCom=', $commentaire->id(),'&p=1">Supprimer</a></td></tr>', "\n";
         }
 
         ?>

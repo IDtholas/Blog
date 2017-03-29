@@ -1,7 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="625d0194-b0d5-4f44-a7d9-71d742f56962" name="Default" comment="" />
+    <list default="true" id="625d0194-b0d5-4f44-a7d9-71d742f56962" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/about.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/contact.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/gulpfile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/mail/contact_me.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/bootstrap/css/bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/bootstrap/css/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/bootstrap/fonts/glyphicons-halflings-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/bootstrap/fonts/glyphicons-halflings-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/bootstrap/js/bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/bootstrap/js/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/css/font-awesome.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/css/font-awesome.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/fonts/FontAwesome.otf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/fonts/fontawesome-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/fonts/fontawesome-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/fonts/fontawesome-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/fonts/fontawesome-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/fonts/fontawesome-webfont.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/less/animated.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/less/bordered-pulled.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/less/core.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/less/fixed-width.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/less/font-awesome.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/less/icons.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/less/larger.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/less/list.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/less/mixins.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/less/path.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/less/rotated-flipped.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/less/screen-reader.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/less/stacked.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/less/variables.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/scss/_animated.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/scss/_bordered-pulled.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/scss/_core.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/scss/_fixed-width.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/scss/_icons.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/scss/_larger.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/scss/_list.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/scss/_mixins.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/scss/_path.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/scss/_rotated-flipped.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/scss/_screen-reader.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/scss/_stacked.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/scss/_variables.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/scss/font-awesome.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/jquery/jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/jquery/jquery.min.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modeleControllers/Controlleur.php" afterPath="$PROJECT_DIR$/modeleControllers/Controlleur.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vues/administration.php" afterPath="$PROJECT_DIR$/vues/administration.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vues/lesArticles.php" afterPath="$PROJECT_DIR$/vues/lesArticles.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vues/unArticle.php" afterPath="$PROJECT_DIR$/vues/unArticle.php" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,12 +76,12 @@
       <file leaf-file-name="unArticle.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vues/unArticle.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="7" lean-forward="false" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
+            <state relative-caret-position="459">
+              <caret line="27" column="14" lean-forward="true" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
               <folding>
-                <marker date="1490796816324" expanded="true" signature="4422:4440" ph="..." />
-                <marker date="1490796816324" expanded="true" signature="7854:7858" ph="..." />
-                <marker date="1490796816324" expanded="true" signature="8472:8563" ph="..." />
+                <marker date="1490799989456" expanded="true" signature="4398:4416" ph="..." />
+                <marker date="1490799989456" expanded="true" signature="7830:7834" ph="..." />
+                <marker date="1490799989456" expanded="true" signature="8448:8539" ph="..." />
               </folding>
             </state>
           </provider>
@@ -32,11 +90,10 @@
       <file leaf-file-name="lesArticles.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vues/lesArticles.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="7" lean-forward="false" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
+            <state relative-caret-position="272">
+              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding>
-                <marker date="1490797722908" expanded="true" signature="1411:1425" ph="..." />
-                <marker date="1490797722908" expanded="true" signature="2911:2933" ph="..." />
+                <marker date="1490802225922" expanded="true" signature="2912:2934" ph="..." />
               </folding>
             </state>
           </provider>
@@ -52,11 +109,31 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="font-awesome.min.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/css/font-awesome.min.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="administration.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vues/administration.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="53" column="21" lean-forward="false" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
+            <state relative-caret-position="-567">
+              <caret line="169" column="0" lean-forward="false" selection-start-line="169" selection-start-column="0" selection-end-line="169" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LICENSE" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/LICENSE">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -65,10 +142,10 @@
       <file leaf-file-name="accueil.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vues/accueil.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+            <state relative-caret-position="17">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding>
-                <marker date="1490797971455" expanded="true" signature="2910:2932" ph="..." />
+                <marker date="1490801922658" expanded="true" signature="2910:2932" ph="..." />
               </folding>
             </state>
           </provider>
@@ -77,24 +154,14 @@
       <file leaf-file-name="ControlleurUnArticle.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modeleControllers/ControlleurUnArticle.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="620">
-              <caret line="54" column="9" lean-forward="true" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
+            <state relative-caret-position="918">
+              <caret line="54" column="9" lean-forward="false" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="articlemanagers.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modele/articlemanagers.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1156">
-              <caret line="68" column="68" lean-forward="true" selection-start-line="68" selection-start-column="68" selection-end-line="68" selection-end-column="68" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Rooter.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Rooter.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/modeleControllers/Rooter.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="459">
@@ -104,21 +171,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Controlleur.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Controlleur.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modeleControllers/Controlleur.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
-              <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="controlleurAdministration.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/controlleurAdministration.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <caret line="11" column="1" lean-forward="false" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -183,18 +240,18 @@
         <option value="$PROJECT_DIR$/controllers/controlleurAccueil.php" />
         <option value="$PROJECT_DIR$/controllers/controlleurLesArticles.php" />
         <option value="$PROJECT_DIR$/controllers/controlleurUnArticle.php" />
-        <option value="$PROJECT_DIR$/modeleControllers/Controlleur.php" />
         <option value="$PROJECT_DIR$/modeleControllers/ControlleurAdmin.php" />
         <option value="$PROJECT_DIR$/modeleControllers/ControlleurAccueil.php" />
         <option value="$PROJECT_DIR$/modeleControllers/ControlleurLesArticles.php" />
         <option value="$PROJECT_DIR$/modeleControllers/ControlleurUnArticle.php" />
-        <option value="$PROJECT_DIR$/vues/unArticle.php" />
         <option value="$PROJECT_DIR$/admin/controlleurAdministration.php" />
-        <option value="$PROJECT_DIR$/vues/administration.php" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/vues/lesArticles.php" />
-        <option value="$PROJECT_DIR$/vues/accueil.php" />
         <option value="$PROJECT_DIR$/modeleControllers/Rooter.php" />
+        <option value="$PROJECT_DIR$/vues/administration.php" />
+        <option value="$PROJECT_DIR$/vues/unArticle.php" />
+        <option value="$PROJECT_DIR$/vues/accueil.php" />
+        <option value="$PROJECT_DIR$/modeleControllers/Controlleur.php" />
+        <option value="$PROJECT_DIR$/vues/lesArticles.php" />
       </list>
     </option>
   </component>
@@ -229,6 +286,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -241,29 +299,14 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="p3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="p3" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../p3-master" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -398,15 +441,17 @@
       <workItem from="1490784002237" duration="6807000" />
       <workItem from="1490794234462" duration="3812000" />
       <workItem from="1490798163908" duration="846000" />
+      <workItem from="1490799437760" duration="581000" />
+      <workItem from="1490801400345" duration="1049000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118316000" />
+    <option name="totallyTimeSpent" value="119946000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17864583" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -438,7 +483,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/admin.php" />
     <entry file="file://$PROJECT_DIR$/plugins/tinymce/js/tinymce/plugins/lists/plugin.js" />
     <entry file="file://$PROJECT_DIR$/plugins/tinymce/js/tinymce/plugins/lists/plugin.min.js" />
     <entry file="file://$PROJECT_DIR$/plugins/tinymce/filemanager/config.php" />
@@ -463,29 +507,14 @@
     <entry file="file://$PROJECT_DIR$/js/reloadAjout.js" />
     <entry file="file://$PROJECT_DIR$/controllers/traitementform.php" />
     <entry file="file://$PROJECT_DIR$/bla.php" />
-    <entry file="file://$PROJECT_DIR$/../bootstrapblog-code/delete_post.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="44" lean-forward="true" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../bootstrapblog-code/delete_post.php" />
     <entry file="file://$PROJECT_DIR$/vues/header.php" />
-    <entry file="file://$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/index.html" />
     <entry file="file://$PROJECT_DIR$/vues/footer.php" />
     <entry file="file://$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/README.md" />
     <entry file="file://$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/package.json" />
-    <entry file="file://$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/LICENSE" />
     <entry file="file://$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/less/clean-blog.less" />
     <entry file="file://$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/mail/contact_me.php" />
-    <entry file="file://$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/about.html" />
-    <entry file="file://$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/gulpfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/gulpfile.js" />
     <entry file="file://$PROJECT_DIR$/js/tooltip.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -497,7 +526,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="22" column="29" lean-forward="true" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -505,7 +533,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="38" column="37" lean-forward="true" selection-start-line="38" selection-start-column="37" selection-end-line="38" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -546,35 +573,100 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1156">
           <caret line="68" column="68" lean-forward="true" selection-start-line="68" selection-start-column="68" selection-end-line="68" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/controlleurAccueil.php" />
+    <entry file="file://$PROJECT_DIR$/controllers/controlleurLesArticles.php" />
+    <entry file="file://$PROJECT_DIR$/admin/controlleurAdministration.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modeleControllers/ControlleurUnArticle.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="54" column="9" lean-forward="false" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/about.html" />
+    <entry file="file://$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/LICENSE">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/css/font-awesome.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vues/administration.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-567">
+          <caret line="169" column="0" lean-forward="false" selection-start-line="169" selection-start-column="0" selection-end-line="169" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modeleControllers/Controlleur.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="1" lean-forward="false" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vues/accueil.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <marker date="1490801922658" expanded="true" signature="2910:2932" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vues/lesArticles.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="7" lean-forward="false" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
+        <state relative-caret-position="272">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding>
-            <marker date="1490797722908" expanded="true" signature="1411:1425" ph="..." />
-            <marker date="1490797722908" expanded="true" signature="2911:2933" ph="..." />
+            <marker date="1490802225922" expanded="true" signature="2912:2934" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vues/unArticle.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="7" lean-forward="false" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
+        <state relative-caret-position="459">
+          <caret line="27" column="14" lean-forward="true" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
           <folding>
-            <marker date="1490796816324" expanded="true" signature="4422:4440" ph="..." />
-            <marker date="1490796816324" expanded="true" signature="7854:7858" ph="..." />
-            <marker date="1490796816324" expanded="true" signature="8472:8563" ph="..." />
+            <marker date="1490799989456" expanded="true" signature="4398:4416" ph="..." />
+            <marker date="1490799989456" expanded="true" signature="7830:7834" ph="..." />
+            <marker date="1490799989456" expanded="true" signature="8448:8539" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/controlleurAccueil.php" />
-    <entry file="file://$PROJECT_DIR$/controllers/controlleurLesArticles.php" />
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -583,52 +675,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/controlleurAdministration.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modeleControllers/ControlleurUnArticle.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="54" column="9" lean-forward="true" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vues/administration.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="53" column="21" lean-forward="false" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vues/accueil.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding>
-            <marker date="1490797971455" expanded="true" signature="2910:2932" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modeleControllers/Rooter.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modeleControllers/Controlleur.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
           <folding />
         </state>
       </provider>

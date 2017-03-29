@@ -35,17 +35,17 @@
                         <span class="sr-only">Toggle navigation</span>
                         Menu <i class="fa fa-bars"></i>
                     </button>
-                    <a class="navbar-brand" href="controlleurAccueil.php">Blog de Jean Forteroche</a>
+                    <a class="navbar-brand" href="index.php">Blog de Jean Forteroche</a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
                         <li>
-                            <a href="controlleurAccueil.php">Accueil</a>
+                            <a href="index.php">Accueil</a>
                         </li>
                         <li>
-                            <a href="controlleurlesArticles.php?p=1">Les articles</a>
+                            <a href="index.php?action=lesArticles&p=1">Les articles</a>
                         </li>
                         <li>
                             <a href="controlleurApropos.php">A propos de moi</a>
@@ -214,15 +214,15 @@
             </div>
         </footer>
 
-        <script src="../js/tooltip.js"></script>
+        <script src="/js/tooltip.js"></script>
         <!-- jQuery -->
-        <script src="../startbootstrap-clean-blog-gh-pages/vendor/jquery/jquery.min.js"></script>
+        <script src="startbootstrap-clean-blog-gh-pages/vendor/jquery/jquery.min.js"></script>
 
         <!-- Bootstrap Core JavaScript -->
-        <script src="../startbootstrap-clean-blog-gh-pages/vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script src="startbootstrap-clean-blog-gh-pages/vendor/bootstrap/js/bootstrap.min.js"></script>
 
         <!-- Theme JavaScript -->
-        <script src="../startbootstrap-clean-blog-gh-pages/js/clean-blog.min.js"></script>
+        <script src="startbootstrap-clean-blog-gh-pages/js/clean-blog.min.js"></script>
 
         </body>
 </html>
