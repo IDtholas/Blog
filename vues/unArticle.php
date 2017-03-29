@@ -6,6 +6,7 @@
     <meta name="description" content="Blog de Jean Forteroche">
     <meta name="author" content=" Jean Forteroche">
     <title>Article du site</title>
+    <link href="../css/style.css" rel="stylesheet">
     <link href="../css/bootstrap.css" rel="stylesheet">
     <link href="../startbootstrap-clean-blog-gh-pages/css/clean-blog.min.css" rel="stylesheet">
 
@@ -92,62 +93,90 @@
         echo '<p style="text-align: right;"><small><em>Modifié le ', $article->dateModif()->format('d/m/Y à H\hi'), '</em></small></p>';
     }
     ?>
-            <div class="row"><div class="col-lg-12"><h2> Commentaires : </h2></div></div>
-
+        <div class="container">
             <div class="row">
-                <section class="col-sm-8">
-                    <form class="well" action="controlleurUnArticle.php?id=<?php echo $article->id()?>" method="post" >
-                        <legend> <?php echo $titreForm; ?> </legend>
-                        <fieldset>
-                            <label for="auteur">Votre nom :</label>
-                            <?php if (isset($erreurs) && in_array(Article::AUTEUR_INVALIDE, $erreurs)) echo ' <div class="alert alert-danger fade in"> L\'auteur est invalide.</div><br />'; ?>
-                            <input type="text" name="auteur" class="form-control" id="auteur">
-                            <label for="titre"> Titre du commentaire :</label>
-                            <?php if (isset($erreurs) && in_array(Article::TITRE_INVALIDE, $erreurs)) echo '<div class="alert alert-danger fade in">Le titre est invalide.</div><br />'; ?>
-                            <input type="text" name="titre" class="form-control" id="titre">
-                            <label for="contenu">Votre commentaire :</label>
-                            <?php if (isset($erreurs) && in_array(Article::CONTENU_INVALIDE, $erreurs)) echo '<div class="alert alert-danger fade in">Le contenu est invalide.</div><br />'; ?>
-                            <textarea id="textarea" name="contenu" id="contenu" class="form-control" rows="4"></textarea>
-                            <p class="help-block">Vous pouvez modifier la taille de la fenêtre.</p>
-                            <input type="hidden" name="depth" value="<?= $depthParent + 1 ?>" />
-                            <input type="hidden" name="idParent" value="<?= $idParent ?>" />
-                            <button class="btn btn-primary" type="submit"><span class="glyphicon glyphicon-ok-sign"></span> Envoyer</button>
-                        </fieldset>
-                    </form>
-                </section>
+                <div class="col-md-12">
+                    <div class="blog-comment">
+                        <h1>Commentaires :</h1>
+                        <hr/>
+                        <div class="row">
+                            <section class="col-sm-8">
+                                <form class="well" action="controlleurUnArticle.php?id=<?php echo $article->id()?>" method="post" >
+                                    <legend> <?php echo $titreForm; ?> </legend>
+                                    <fieldset>
+                                        <label for="auteur">Votre nom :</label>
+                                        <?php if (isset($erreurs) && in_array(Article::AUTEUR_INVALIDE, $erreurs)) echo ' <div class="alert alert-danger fade in"> L\'auteur est invalide.</div><br />'; ?>
+                                        <input type="text" name="auteur" class="form-control" id="auteur">
+                                        <label for="titre"> Titre du commentaire :</label>
+                                        <?php if (isset($erreurs) && in_array(Article::TITRE_INVALIDE, $erreurs)) echo '<div class="alert alert-danger fade in">Le titre est invalide.</div><br />'; ?>
+                                        <input type="text" name="titre" class="form-control" id="titre">
+                                        <label for="contenu">Votre commentaire :</label>
+                                        <?php if (isset($erreurs) && in_array(Article::CONTENU_INVALIDE, $erreurs)) echo '<div class="alert alert-danger fade in">Le contenu est invalide.</div><br />'; ?>
+                                        <textarea id="textarea" name="contenu" id="contenu" class="form-control" rows="4"></textarea>
+                                        <p class="help-block">Vous pouvez modifier la taille de la fenêtre.</p>
+                                        <input type="hidden" name="depth" value="<?= $depthParent + 1 ?>" />
+                                        <input type="hidden" name="idParent" value="<?= $idParent ?>" />
+                                        <button class="btn btn-primary" type="submit"><span class="glyphicon glyphicon-ok-sign"></span> Envoyer</button>
+                                    </fieldset>
+                                </form>
+                            </section>
+                        </div></br>
+                        <ul class="comments">
+                            <?php foreach ($listeCom as $commentaire) {
+                            $contenu = $commentaire->contenu(); ?>
+                            <li class="commentaire">
+                                <div>
+                                    <p class="commentaire-tete">Par : <strong><?php echo $commentaire->auteur();?></strong> Le <?php echo $commentaire->dateAjout()->format('d/m/Y à H\hi'); ?>
+                                       <a href="controlleurUnArticle.php?id=<?php echo $article->id();?>&moderer=<?php echo $commentaire->id();?>">
+                                                    <i class="pull-right fa fa-exclamation-triangle fa-lg" data-toggle="tooltip" data-placement="top" title="Signalez un commentaire inapproprié"></i></a>
+                                        <a href="controlleurUnArticle.php?id=<?php echo $article->id(); ?>&id_parent=<?php echo $commentaire->id(); ?>&depthParent=<?php echo $commentaire->depth(); ?>">
+                                                <i class="pull-right fa fa-reply fa-lg " data-toggle="tooltip" data-placement="top" title="Répondre à ce commentaire"></i></a></p>
+                                    <p>
+                                        <?php echo nl2br($contenu); ?>
+                                    </p>
+                                </div>
+                            </li></br>
+                            <ul class="comments">
+
+                                <?php foreach ($managerCom->getListSpe(0, 5, $_GET['id'], $commentaire->id(), 2) as $reponse1)
+                                {
+                                $contenu = $reponse1->contenu(); ?>
+                                <li class="reponse1">
+                                    <div class="post-comments">
+                                        <p class="commentaire-tete">Par : <strong><?php echo $reponse1->auteur();?></strong> Le <?php echo $reponse1->dateAjout()->format('d/m/Y à H\hi'); ?>
+                                            <a href="controlleurUnArticle.php?id=<?php echo $article->id();?>&moderer=<?php echo $reponse1->id();?>">
+                                                <i class="pull-right fa fa-exclamation-triangle fa-lg" data-toggle="tooltip" data-placement="top" title="Signalez un commentaire inapproprié"></i></a>
+                                            <a href="controlleurUnArticle.php?id=<?php echo $article->id(); ?>&id_parent=<?php echo $reponse1->id(); ?>&depthParent=<?php echo $reponse1->depth(); ?>">
+                                                <i class="pull-right fa fa-reply fa-lg" data-toggle="tooltip" data-placement="top" title="Répondre à ce commentaire"></i></a></p>
+                                            <?php echo  nl2br($contenu); ?>
+                                        </p>
+                                    </div>
+                                </li></br>
+                                <ul class="comments">
+
+                                    <?php foreach ($managerCom->getListSpe(0, 5, $_GET['id'], $reponse1->id(), 3) as $reponse2) {
+                                        $contenu = $reponse2->contenu(); ?>
+                                        <li class="reponse2">
+                                            <div class="post-comments">
+                                                <p class="commentaire-tete">Par : <strong><?php echo $reponse2->auteur();?></strong> Le <?php echo $reponse2->dateAjout()->format('d/m/Y à H\hi'); ?>
+                                                    <a href="controlleurUnArticle.php?id=<?php echo $article->id();?>&moderer=<?php echo $reponse2->id();?>">
+                                                        <i class="pull-right fa fa-exclamation-triangle fa-lg" data-toggle="tooltip" data-placement="top" title="Signalez un commentaire inapproprié"></i></a>
+                                                </p>
+                                                    <?php echo  nl2br($contenu); ?>
+                                                </p>
+                                            </div>
+                                        </li></br>
+                                        <?php
+                                    }
+                                    echo '</ul>';
+                                    }
+                                    echo '</ul>';
+                                    }
+                                    echo '</ul>';?>
+                    </div>
+                </div>
             </div>
-
-
-            <?php
-
-            foreach ($listeCom as $commentaire) {
-                    $contenu = $commentaire->contenu();
-                echo '<h4> Par : ',$commentaire->auteur(), ' ', $commentaire->titre(), '</h4>', "\n",
-                '<p>', nl2br($contenu), '</p><a class="btn btn-primary" href="controlleurUnArticle.php?id=',$article->id(),'&moderer=',$commentaire->id(),'"> Signalez un commentaire inapproprié. </a> <a class="btn btn-primary" href="controlleurUnArticle.php?id=', $article->id(),'&id_parent=', $commentaire->id(),'&depthParent=', $commentaire->depth(),'">Répondre</a>';
-
-                foreach ( $managerCom->getListSpe(0,5, $_GET['id'], $commentaire->id(), 2) as $reponse1)
-                {
-                    $contenu = $reponse1->contenu();
-                    echo '<h4> Par : ',$reponse1->auteur(), ' ', $reponse1->titre(), '</h4>', "\n",
-                    '<p>', nl2br($contenu), '</p><a class="btn btn-primary" href="controlleurUnArticle.php?id=', $article->id(),'&id_parent=', $reponse1->id(),'&depthParent=', $reponse1->depth(),'">Répondre</a>';
-
-                    foreach ( $managerCom->getListSpe(0,5, $_GET['id'], $reponse1->id(), 3) as $reponse2)
-                    {
-                        $contenu = $reponse2->contenu();
-                        echo '<h4> Par : ',$reponse2->auteur(), ' ', $reponse2->titre(), '</h4>', "\n",
-                        '<p>', nl2br($contenu), '</p><a class="btn btn-primary" href="controlleurUnArticle.php?id=', $article->id(),'&id_parent=', $reponse2->id(),'&depthParent=', $reponse2->depth(),'">Répondre</a>';
-
-                        foreach ( $managerCom->getListSpe(0,5, $_GET['id'], $reponse2->id(), 4) as $reponse3)
-                        {
-                            $contenu = $reponse3->contenu();
-                            echo '<h4> Par : ',$reponse3->auteur(), ' ', $reponse3->titre(), '</h4>', "\n",
-                            '<p>', nl2br($contenu), '</p><a class="btn btn-primary" href="controlleurUnArticle.php?id=', $article->id(),'&id_parent=', $reponse3->id(),'&depthParent=', $reponse3->depth(),'">C est fini c est tout</a>';
-
-                        }
-                    }
-                }
-            }
-            ?>
+        </div>
         <footer>
             <div class="container">
                 <div class="row">
@@ -185,6 +214,7 @@
             </div>
         </footer>
 
+        <script src="../js/tooltip.js"></script>
         <!-- jQuery -->
         <script src="../startbootstrap-clean-blog-gh-pages/vendor/jquery/jquery.min.js"></script>
 

@@ -1,0 +1,29 @@
+.commentaire {
+    background-color: rgba(0, 131, 161, 0.2);
+    border-radius: 5px;
+    border: 3px black solid;
+}
+
+.commentaire-tete{
+    border-bottom: 3px black solid;
+}
+
+.reponse1 {
+    background-color: rgba(0, 200, 161, 0.2);
+    border-radius: 5px;
+    border: 3px black solid;
+}
+
+.reponse1{
+    border-bottom: 3px black solid;
+}
+
+.reponse2 {
+    background-color: rgba(0, 250, 161, 0.2);
+    border-radius: 5px;
+    border: 3px black solid;
+}
+
+.reponse2{
+    border-bottom: 3px black solid;
+}
