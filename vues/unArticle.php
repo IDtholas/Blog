@@ -51,7 +51,7 @@
                             <a href="index.php?action=aPropos">A propos de moi</a>
                         </li>
                         <li>
-                            <a href="controlleurContact.php">Contact</a>
+                            <a href="index.php?action=contact">Contact</a>
                         </li>
                     </ul>
                 </div>

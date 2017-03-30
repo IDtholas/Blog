@@ -5,8 +5,8 @@ class Controlleur
     protected $managerCom;
 
     public function __construct() {
-        $db = new PDO('mysql:host=localhost;dbname=blog', 'root', '');
-        $this->manager = new ArticleManagers($db);
-        $this->managerCom = new CommentaireManagers($db);
+        $connexion = new Connexion('blog','root','localhost','');
+        $this->manager = new ArticleManagers($connexion->db());
+        $this->managerCom = new CommentaireManagers($connexion->db());
     }
 }

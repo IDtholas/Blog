@@ -50,7 +50,7 @@
                     <a href="../index.php?action=aPropos">A propos de moi</a>
                 </li>
                 <li>
-                    <a href="../controllers/controlleurContact.php">Contact</a>
+                    <a href="../index.php?action=contact">Contact</a>
                 </li>
             </ul>
         </div>
@@ -81,7 +81,7 @@ if (isset($commentaire))
     '<p>', nl2br($commentaire->contenu()), '</p>', "\n";
 
 ?>
-        <a href="controlleurAdministration.php?supprimerCom=<?php echo $commentaire->id();?>&p=1" class="btn btn-danger"><span class="glyphicon glyphicon-ok-sign"></span> Supprimez le commentaire.</a> </div></br>
+    <a href="controlleurAdministration.php?deModerer=<?php echo $commentaire->id();?>&p=1" class="btn btn-primary"><span class="glyphicon glyphicon-ok-sign"></span> Ce commentaire est valide.</a> <a href="controlleurAdministration.php?supprimerCom=<?php echo $commentaire->id();?>&p=1" class="btn btn-danger"><span class="glyphicon glyphicon-remove-sign"></span> Supprimez le commentaire.</a> </div></br>
         <?php
 }
 ?>

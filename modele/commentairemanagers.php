@@ -134,6 +134,16 @@ class Commentairemanagers
         $requete->execute();
     }
 
+    public function deModerer()
+    {
+        $requete = $this->db->prepare('UPDATE commentaire SET moderation = :moderation WHERE id = :id');
+
+        $requete->bindValue(':moderation', 0, PDO::PARAM_INT);
+        $requete->bindValue(':id', $_GET['deModerer'], PDO::PARAM_INT);
+
+        $requete->execute();
+    }
+
     public function getComModeration()
     {
         $sql = 'SELECT id, auteur, titre, contenu, dateAjout, id_billet, id_parent, depth, moderation FROM commentaire WHERE moderation = :moderation ORDER BY id DESC';

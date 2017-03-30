@@ -53,7 +53,7 @@
                     <a href="index.php?action=aPropos">A propos de moi</a>
                 </li>
                 <li>
-                    <a href="controlleurContact.php">Contact</a>
+                    <a href="index.php?action=contact">Contact</a>
                 </li>
             </ul>
         </div>
@@ -88,7 +88,7 @@
                 $debut = substr($article->contenu(), 0, 200);
                 $debut = substr($debut, 0, strrpos($debut, ' ')) . '...';
 
-                $contenu = $debut;
+                $contenu = strip_tags($debut);
             }?>
             <div class="post-preview">
                 <a href="index.php?action=unArticle&id=<?php echo $article->id();?>">

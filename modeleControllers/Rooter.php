@@ -7,6 +7,7 @@ class Rooter
     private $ctrlAdmin;
     private $ctrlLesArticles;
     private $ctrlApropos;
+    private $ctrlContact;
 
     public function __construct()
     {
@@ -15,6 +16,7 @@ class Rooter
         $this->ctrlUnArticle = New ControlleurUnArticle();
         $this->ctrlApropos = New ControlleurAPropos();
         $this->ctrlAdmin = New ControlleurAdmin();
+        $this->ctrlContact = New ControlleurContact();
     }
 
     public function rooterRequete()
@@ -46,6 +48,11 @@ class Rooter
         if($page ==='aPropos')
         {
             $this->ctrlApropos->aPropos();
+        }
+
+        if($page ==='contact')
+        {
+            $this->ctrlContact->contact();
         }
 
         if($page === 'admin')

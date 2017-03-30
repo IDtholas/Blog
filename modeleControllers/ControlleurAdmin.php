@@ -48,6 +48,12 @@ class ControlleurAdmin extends Controlleur
             $message = '<div class="alert alert-success fade in"> Le commentaire a bien été supprimé.</div>';
         }
 
+        if (isset($_GET['deModerer']))
+        {
+            $this->managerCom->deModerer();
+            $message = '<div class="alert alert-success fade in"> Le commentaire est de nouveau valide.</div>';
+        }
+
         if (isset($_GET['supprimer']))
         {
             $this->manager->delete((int) $_GET['supprimer']);
