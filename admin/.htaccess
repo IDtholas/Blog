@@ -1,4 +1,8 @@
+<Files controlleurAdministration.php>
+
 AuthName "Page d'administration, merci de rentrer vos identifiants."
 AuthType Basic
 AuthUserFile "C:\wamp64\www\p3\admin\.htpasswd"
 Require valid-user
+
+</Files>

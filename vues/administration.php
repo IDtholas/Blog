@@ -108,7 +108,7 @@ if (isset($commentaire))
                 <div class="form-group>
                     <label for="contenu">Rédigez votre article:</label>
                     <?php if (isset($erreurs) && in_array(Article::CONTENU_INVALIDE, $erreurs)) echo '<div class="alert alert-danger fade in">Le contenu est invalide.</div><br />'; ?>
-                    <textarea name="contenu" class="form-control" id="contenu"><?php if (isset($article)) echo $article->contenu(); ?></textarea>
+                    <textarea rows="17" cols="80" name="contenu" class="form-control" id="contenu"><?php if (isset($article)) echo $article->contenu(); ?></textarea>
                     <p class="help-block">Vous pouvez modifier la taille de la fenêtre.</p>
                 </div>
                 <?php

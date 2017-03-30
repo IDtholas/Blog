@@ -2,18 +2,18 @@
 
 class Connexion
 {
- protected $dbname;
- protected $dbuser;
- protected $dbhost;
- protected $dbpass;
+ protected $dbname = 'blog';
+ protected $dbuser = 'root';
+ protected $dbhost = 'localhost';
+ protected $dbpass = '';
  protected $db;
 
- public function __construct($nom, $user, $host, $pass)
+ public function __construct()
  {
-     $this->dbname = $nom;
-     $this->dbuser = $user ;
-     $this->dbhost = $host;
-     $this->dbpass = $pass;
+     $nom = $this->dbname;
+     $user = $this->dbuser;
+     $host = $this->dbhost;
+     $pass = $this->dbpass;
      $this->db = New PDO("mysql:host=$host;dbname=$nom", $user, $pass);
  }
 

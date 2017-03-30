@@ -88,7 +88,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
-                <a type="button" id="pied" class="btn btn-default" href="index.php?action=admin&p=1"> Accéder à l'interface d'administration</a>
+                <a type="button" id="pied" class="btn btn-default" href="admin/controlleurAdministration.php?p=1"> Accéder à l'interface d'administration</a>
                 <ul class="list-inline text-center">
                     <li>
                         <a href="#">

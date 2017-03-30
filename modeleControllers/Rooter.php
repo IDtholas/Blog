@@ -55,11 +55,6 @@ class Rooter
             $this->ctrlContact->contact();
         }
 
-        if($page === 'admin')
-        {
-            header('Location: admin/controlleurAdministration.php?p=1');
-            exit();
-        }
-
     }
 }
+?>

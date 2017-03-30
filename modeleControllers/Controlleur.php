@@ -3,10 +3,12 @@ class Controlleur
 {
     protected $manager;
     protected $managerCom;
+    protected $connexion;
 
     public function __construct() {
-        $connexion = new Connexion('blog','root','localhost','');
-        $this->manager = new ArticleManagers($connexion->db());
-        $this->managerCom = new CommentaireManagers($connexion->db());
+        $this->connexion = new Connexion();
+        $this->manager = new ArticleManagers($this->connexion->db());
+        $this->managerCom = new CommentaireManagers($this->connexion->db());
     }
 }
+?>

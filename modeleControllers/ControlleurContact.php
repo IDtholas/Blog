@@ -7,3 +7,4 @@ class ControlleurContact
         require 'vues/contact.php';
     }
 }
+?>

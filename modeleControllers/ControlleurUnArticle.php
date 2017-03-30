@@ -63,3 +63,4 @@ class ControlleurUnArticle extends Controlleur
         require 'vues/unArticle.php';
     }
 }
+?>
