@@ -74,18 +74,15 @@
 
 <?php
 // Check for empty fields
-if(isset($_POST['name'])) {
-    if (empty($_POST['name']) ||
-        empty($_POST['email']) ||
-        empty($_POST['phone']) ||
-        empty($_POST['message']) ||
-        !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)
-    ) {
-        echo "No arguments Provided!";
-        return false;
-    }
 
+                $headers ='From: toto@laposte.net'."\n";
+                $headers .='Reply-To: toto@laposte.net'."\n";
+                $headers .='Content-Type: text/plain; charset="iso-8859-1"'."\n";
+                $headers .='Content-Transfer-Encoding: 8bit';
+                mail('alexandre.drabczuk@gmail.com', 'Sujet',
+                    'Message contenu de l email', $headers);
 
+/*
     $name = strip_tags(htmlspecialchars($_POST['name']));
     $email_address = strip_tags(htmlspecialchars($_POST['email']));
     $phone = strip_tags(htmlspecialchars($_POST['phone']));
@@ -95,11 +92,13 @@ if(isset($_POST['name'])) {
     $to = 'alexandre.drabczuk@gmail.com'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
     $email_subject = "Contact du blog de Jean forteroche:  $name";
     $email_body = "Vous avez reçu un message de votre siteweb.\n\n" . "En voici les détails:\n\nName: $name\n\nEmail: $email_address\n\nPhone: $phone\n\nMessage:\n$message";
-    $headers = "From: noreply@yourdomain.com\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
+    $headers  = "From: monsite.com\n";
+    $headers .= "Reply-To: postmaster@monsite.com\n";
+    $headers .= "MIME-Version: 1.0\r\n";
+    $headers .= "Content-Transfer-Encoding: 8bit\n";
+    $headers .= "Content-type: text/html; charset=utf-8\n";
     $headers .= "Reply-To: $email_address";
-    mail($to, $email_subject, $email_body, $headers);
-    return true;
-}
+    mail($to, $email_subject, $email_body, $headers);*/
 ?>
 
 <div class="container">
@@ -109,32 +108,32 @@ if(isset($_POST['name'])) {
             <!-- Contact Form - Enter your email address on line 19 of the mail/contact_me.php file to make this form work. -->
             <!-- WARNING: Some web hosts do not allow emails to be sent through forms to common mail hosts like Gmail or Yahoo. It's recommended that you use a private domain email address! -->
             <!-- NOTE: To use the contact form, your site must be on a live web host with PHP! The form will not work locally! -->
-            <form method="post" action="index.php?action=contact" name="sentMessage" id="contactForm" novalidate>
+            <form method="post" action="index.php?action=contact" name="sentMessage" id="contactForm">
                 <div class="row control-group">
                     <div class="form-group col-xs-12 floating-label-form-group controls">
                         <label>Name</label>
-                        <input type="text" class="form-control" placeholder="Nom" id="name" required data-validation-required-message="Please enter your name.">
+                        <input type="text" class="form-control" placeholder="Nom" id="name">
                         <p class="help-block text-danger"></p>
                     </div>
                 </div>
                 <div class="row control-group">
                     <div class="form-group col-xs-12 floating-label-form-group controls">
                         <label>Email Address</label>
-                        <input type="email" class="form-control" placeholder="Adresse Email" id="email" required data-validation-required-message="Please enter your email address.">
+                        <input type="email" class="form-control" placeholder="Adresse Email" id="email">
                         <p class="help-block text-danger"></p>
                     </div>
                 </div>
                 <div class="row control-group">
                     <div class="form-group col-xs-12 floating-label-form-group controls">
                         <label>Phone Number</label>
-                        <input type="tel" class="form-control" placeholder="Numéro de téléphone" id="phone" required data-validation-required-message="Please enter your phone number.">
+                        <input type="tel" class="form-control" placeholder="Numéro de téléphone" id="phone">
                         <p class="help-block text-danger"></p>
                     </div>
                 </div>
                 <div class="row control-group">
                     <div class="form-group col-xs-12 floating-label-form-group controls">
                         <label>Message</label>
-                        <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                        <textarea rows="5" class="form-control" placeholder="Message" id="message"></textarea>
                         <p class="help-block text-danger"></p>
                     </div>
                 </div>

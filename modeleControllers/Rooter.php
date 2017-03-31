@@ -55,6 +55,12 @@ class Rooter
             $this->ctrlContact->contact();
         }
 
+      /*  if($page ==='admin')
+        {
+            $this->ctrlAdmin->admin();
+        }*/
+
+
     }
 }
 ?>

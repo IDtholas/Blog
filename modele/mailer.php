@@ -7,6 +7,11 @@ class mailer
  private $message;
  private $phone;
 
+ const TO = 'alexandre.drabczuk@gmail.com';
+ const AUTEUR_INVALIDE = 1;
+ const TITRE_INVALIDE = 2;
+ const CONTENU_INVALIDE = 3;
+
     public function __construct($valeurs = [])
     {
         if (!empty($valeurs))
