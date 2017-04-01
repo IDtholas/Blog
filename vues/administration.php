@@ -7,10 +7,10 @@
     <meta name="author" content=" Jean Forteroche">
     <title>Interface d'administration du site</title>
     <link href="../css/bootstrap.css" rel="stylesheet">
-    <link href="../startbootstrap-clean-blog-gh-pages/css/clean-blog.min.css" rel="stylesheet">
+    <link href="../css/clean-blog.min.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="../startbootstrap-clean-blog-gh-pages/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
@@ -92,7 +92,7 @@ if (isset($commentaire))
     }
     ?>
     <div class="container well center-block">
-        <form action="controlleurAdministration.php?p=1" method="post">
+        <form action="indexAdmin.php?p=1" method="post">
             <legende><h2>Ajoutez un article: </h2></legende>
             <fieldset>
                 <div class="form-group">
@@ -230,12 +230,12 @@ if (isset($commentaire))
         });</script>
 
     <!-- jQuery -->
-    <script src="../startbootstrap-clean-blog-gh-pages/vendor/jquery/jquery.min.js"></script>
+    <script src="../js/jquery/jquery.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="../startbootstrap-clean-blog-gh-pages/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
 
     <!-- Theme JavaScript -->
-    <script src="../startbootstrap-clean-blog-gh-pages/js/clean-blog.min.js"></script>
+    <script src="../js/clean-blog.min.js"></script>
 </body>
 </html>

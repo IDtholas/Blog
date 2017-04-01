@@ -22,4 +22,3 @@ class Connexion
      return $this->db;
  }
 }
-?>

@@ -12,6 +12,7 @@ require 'modeleControllers/ControlleurAdmin.php';
 require 'modeleControllers/ControlleurContact.php';
 require 'modeleControllers/ControlleurAPropos.php';
 require 'modeleControllers/Rooter.php';
+require 'modele/Mailer.php';
 
 $rooter= New Rooter();
 $rooter->rooterRequete();

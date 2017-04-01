@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Blog de Jean Forteroche">
     <meta name="author" content=" Jean Forteroche">
-    <title>Article du site</title>
+    <title>Page contact du site</title>
     <link href="css/style.css" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="startbootstrap-clean-blog-gh-pages/css/clean-blog.min.css" rel="stylesheet">
+    <link href="css/clean-blog.min.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="startbootstrap-clean-blog-gh-pages/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
@@ -73,90 +73,87 @@
 </header>
 
 <?php
-// Check for empty fields
-
-                $headers ='From: toto@laposte.net'."\n";
-                $headers .='Reply-To: toto@laposte.net'."\n";
-                $headers .='Content-Type: text/plain; charset="iso-8859-1"'."\n";
-                $headers .='Content-Transfer-Encoding: 8bit';
-                mail('alexandre.drabczuk@gmail.com', 'Sujet',
-                    'Message contenu de l email', $headers);
+if (isset($message))
+{
+    echo '<div class="row"> <div class="col-lg-12 text-center">', $message, '<br /></div></div>';
+}
+?>
+<?php
 
 /*
-    $name = strip_tags(htmlspecialchars($_POST['name']));
+if(isset($_POST['nom'])) {
+    $name = strip_tags(htmlspecialchars($_POST['nom']));
     $email_address = strip_tags(htmlspecialchars($_POST['email']));
-    $phone = strip_tags(htmlspecialchars($_POST['phone']));
+    $titre = strip_tags(htmlspecialchars($_POST['titre']));
     $message = strip_tags(htmlspecialchars($_POST['message']));
 
-// Create the email and send the message
-    $to = 'alexandre.drabczuk@gmail.com'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
+
+    $to = 'alexandre.drabczuk@hotmail.fr';
     $email_subject = "Contact du blog de Jean forteroche:  $name";
-    $email_body = "Vous avez reçu un message de votre siteweb.\n\n" . "En voici les détails:\n\nName: $name\n\nEmail: $email_address\n\nPhone: $phone\n\nMessage:\n$message";
-    $headers  = "From: monsite.com\n";
-    $headers .= "Reply-To: postmaster@monsite.com\n";
+    $email_body = "Vous avez reçu un message de votre siteweb.</br>" . "En voici les détails:\n</br>Nom de l'expediteur: $name\n</br>Email: $email_address\n</br>Titre: $titre\n</br>Message:\n$message";
+    $headers = "From: blog-ecrivain.alexandre-drabczuk.fr\n";
+    $headers .= "Reply-To: postmaster@blogForteroche.com\n";
     $headers .= "MIME-Version: 1.0\r\n";
     $headers .= "Content-Transfer-Encoding: 8bit\n";
     $headers .= "Content-type: text/html; charset=utf-8\n";
     $headers .= "Reply-To: $email_address";
-    mail($to, $email_subject, $email_body, $headers);*/
+    mail($to, $email_subject, $email_body, $headers);
+}*/
 ?>
 
 <div class="container">
     <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <p>Si vous souhaitez me contacter pour n'importe quelle raison, vous pouvez le faire via le formulaire ci-dessous : </p>
-            <!-- Contact Form - Enter your email address on line 19 of the mail/contact_me.php file to make this form work. -->
-            <!-- WARNING: Some web hosts do not allow emails to be sent through forms to common mail hosts like Gmail or Yahoo. It's recommended that you use a private domain email address! -->
-            <!-- NOTE: To use the contact form, your site must be on a live web host with PHP! The form will not work locally! -->
-            <form method="post" action="index.php?action=contact" name="sentMessage" id="contactForm">
-                <div class="row control-group">
-                    <div class="form-group col-xs-12 floating-label-form-group controls">
-                        <label>Name</label>
-                        <input type="text" class="form-control" placeholder="Nom" id="name">
-                        <p class="help-block text-danger"></p>
+                <form method="post" action="index.php?action=contact" name="sentMessage" id="contactForm">
+                    <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <label for="auteur">Nom</label>
+                            <?php if (isset($erreurs) && in_array(Mailer::AUTEUR_INVALIDE, $erreurs)) echo ' <div class="alert alert-danger fade in"> L\'auteur est invalide.</div><br />'; ?>
+                            <input type="text" name="nom" placeholder="Nom" class="form-control" id="nom">
+                        </div>
                     </div>
-                </div>
-                <div class="row control-group">
-                    <div class="form-group col-xs-12 floating-label-form-group controls">
-                        <label>Email Address</label>
-                        <input type="email" class="form-control" placeholder="Adresse Email" id="email">
-                        <p class="help-block text-danger"></p>
+                    <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <label for="email">Email</label>
+                            <?php if (isset($erreurs) && in_array(Mailer::EMAIL_INVALIDE, $erreurs)) echo ' <div class="alert alert-danger fade in"> L\'email est invalide.</div><br />'; ?>
+                            <input type="text" name="email" placeholder="Adresse email" class="form-control" id="email">
+                        </div>
                     </div>
-                </div>
-                <div class="row control-group">
-                    <div class="form-group col-xs-12 floating-label-form-group controls">
-                        <label>Phone Number</label>
-                        <input type="tel" class="form-control" placeholder="Numéro de téléphone" id="phone">
-                        <p class="help-block text-danger"></p>
+                    <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <label for="email">Titre du message</label>
+                            <?php if (isset($erreurs) && in_array(Mailer::TITRE_INVALIDE, $erreurs)) echo ' <div class="alert alert-danger fade in"> Le titre est invalide.</div><br />'; ?>
+                            <input type="text" name="titre" placeholder="Titre du message" class="form-control" id="titre">
+                        </div>
                     </div>
-                </div>
-                <div class="row control-group">
-                    <div class="form-group col-xs-12 floating-label-form-group controls">
-                        <label>Message</label>
-                        <textarea rows="5" class="form-control" placeholder="Message" id="message"></textarea>
-                        <p class="help-block text-danger"></p>
+                    <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                    <label for="message">Message</label>
+                        <?php if (isset($erreurs) && in_array(Mailer::CONTENU_INVALIDE, $erreurs)) echo '<div class="alert alert-danger fade in">Le contenu est invalide.</div><br />'; ?>
+                    <textarea rows="5" name="message" class="form-control" placeholder="Message" id="message"></textarea>
+                                <p class="help-block text-danger"></p>
+                        </div>
+                        </div>
+                    <br>
+                    <div id="success"></div>
+                    <div class="row">
+                        <div class="form-group col-xs-12">
+                            <button type="submit" class="btn btn-default">Envoyer</button>
+                        </div>
                     </div>
-                </div>
-                <br>
-                <div id="success"></div>
-                <div class="row">
-                    <div class="form-group col-xs-12">
-                        <button type="submit" class="btn btn-default">Envoyer</button>
-                    </div>
-                </div>
-            </form>
+        </form>
         </div>
     </div>
 </div>
-
 <hr>
 <hr>
-
+</body>
 <footer>
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
-                <a type="button" id="pied" class="btn btn-default" href="admin/controlleurAdministration.php?p=1"> Accéder à l'interface d'administration</a>
+                <a type="button" id="pied" class="btn btn-default" href="admin/indexAdmin.php?&p=1">Interface d'administration</a>
                 <ul class="list-inline text-center">
                     <li>
                         <a href="#">
@@ -190,13 +187,13 @@
 </footer>
 
 <!-- jQuery -->
-<script src="startbootstrap-clean-blog-gh-pages/vendor/jquery/jquery.min.js"></script>
+<script src="js/jquery/jquery.min.js"></script>
 
 <!-- Bootstrap Core JavaScript -->
-<script src="startbootstrap-clean-blog-gh-pages/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 
 <!-- Theme JavaScript -->
-<script src="startbootstrap-clean-blog-gh-pages/js/clean-blog.min.js"></script>
+<script src="js/clean-blog.min.js"></script>
 
 </body>
 </html>

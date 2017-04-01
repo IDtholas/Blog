@@ -165,5 +165,9 @@ class Commentairemanagers
         return $listeComModeration;
 
     }
+
+    public function supprimerComArticle($id_billet)
+    {
+        $this->db->exec('DELETE FROM commentaire WHERE id_billet = '.(int) $id_billet);
+    }
 }
-?>

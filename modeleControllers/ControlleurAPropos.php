@@ -13,4 +13,3 @@ class ControlleurAPropos extends Controlleur
         require 'vues/aPropos.php';
     }
 }
-?>

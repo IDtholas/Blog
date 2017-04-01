@@ -6,27 +6,31 @@ class ControlleurUnArticle extends Controlleur
     {
         if (isset($_POST['auteur']))
         {
-            $commentaire = new Commentaire(
-                [
-                    'id_billet' => $_GET['id'],
-                    'auteur' => $_POST['auteur'],
-                    'titre' => $_POST['titre'],
-                    'contenu' => $_POST['contenu'],
-                    'moderation' => 0,
-                    'id_parent' => $_POST['idParent'],
-                    'depth' => $_POST['depth'],
-                ]
-            );
-
-            if ($commentaire->isValid()) {
-                $this->managerCom->save($commentaire);
-
-                $message = '<div class="alert alert-success fade in">Le Commentaire a bien été ajouté !</div>';
-
-            }
-            else
+            if (preg_match("#<script>#",$_POST['contenu']))
             {
-                $erreurs = $commentaire->erreurs();
+                $message = '<div class="alert alert-danger fade in"> Protection injection javascript activée!</div>';
+            }
+            else {
+                $commentaire = new Commentaire(
+                    [
+                        'id_billet' => $_GET['id'],
+                        'auteur' => $_POST['auteur'],
+                        'titre' => $_POST['titre'],
+                        'contenu' => htmlspecialchars($_POST['contenu']),
+                        'moderation' => 0,
+                        'id_parent' => $_POST['idParent'],
+                        'depth' => $_POST['depth'],
+                    ]
+                );
+
+                if ($commentaire->isValid()) {
+                    $this->managerCom->save($commentaire);
+
+                    $message = '<div class="alert alert-success fade in">Le Commentaire a bien été ajouté !</div>';
+
+                } else {
+                    $erreurs = $commentaire->erreurs();
+                }
             }
         }
 
@@ -63,4 +67,3 @@ class ControlleurUnArticle extends Controlleur
         require 'vues/unArticle.php';
     }
 }
-?>

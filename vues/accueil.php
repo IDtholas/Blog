@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Blog de Jean Forteroche">
     <meta name="author" content=" Jean Forteroche">
-    <title>Article du site</title>
+    <title>Accueil du site</title>
     <link href="css/style.css" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="startbootstrap-clean-blog-gh-pages/css/clean-blog.min.css" rel="stylesheet">
+    <link href="css/clean-blog.min.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="startbootstrap-clean-blog-gh-pages/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
@@ -74,7 +74,7 @@
 
 <div class="container">
     <div class="col-lg-12 text-center">
-        <h2> Bonjour et bienvenue sur le mon blog!</h2> </br>
+        <h2> Bonjour et bienvenue sur mon blog!</h2> </br>
         <p> Ici vous trouverez boirgnoirngiozegnozieg oeizgnzoeginzegoi noziengoizegnzoieg. </p>
         <p>
             Blablablabla blablablablabla blabla bla blablabla Blablablabla blablablablabla blabla bla
@@ -88,7 +88,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
-                <a type="button" id="pied" class="btn btn-default" href="admin/controlleurAdministration.php?&p=1"> Accéder à l'interface d'administration</a>
+                <a type="button" id="pied" class="btn btn-default" href="admin/indexAdmin.php?&p=1">Interface d'administration</a>
                 <ul class="list-inline text-center">
                     <li>
                         <a href="#">
@@ -122,13 +122,13 @@
 </footer>
 
 <!-- jQuery -->
-<script src="startbootstrap-clean-blog-gh-pages/vendor/jquery/jquery.min.js"></script>
+<script src="js/jquery/jquery.min.js"></script>
 
 <!-- Bootstrap Core JavaScript -->
-<script src="startbootstrap-clean-blog-gh-pages/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 
 <!-- Theme JavaScript -->
-<script src="startbootstrap-clean-blog-gh-pages/js/clean-blog.min.js"></script>
+<script src="js/clean-blog.min.js"></script>
 
 </body>
 </html>

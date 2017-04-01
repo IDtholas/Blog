@@ -57,6 +57,7 @@ class ControlleurAdmin extends Controlleur
         if (isset($_GET['supprimer']))
         {
             $this->manager->delete((int) $_GET['supprimer']);
+            $this->managerCom->supprimerComArticle((int) $_GET['supprimer']);
             $message = '<div class="alert alert-success fade in"> L article a bien été supprimé !</div>';
         }
 
@@ -71,4 +72,3 @@ class ControlleurAdmin extends Controlleur
 
     }
 }
-?>

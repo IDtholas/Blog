@@ -9,4 +9,3 @@ class ControlleurLesArticles extends Controlleur
         require 'vues/lesArticles.php';
     }
 }
-?>

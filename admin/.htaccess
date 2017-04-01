@@ -1,4 +1,4 @@
-<Files controlleurAdministration.php>
+<Files indexAdmin.php>
 
 AuthName "Page d'administration, merci de rentrer vos identifiants."
 AuthType Basic

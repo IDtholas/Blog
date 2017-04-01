@@ -11,4 +11,3 @@ class Controlleur
         $this->managerCom = new CommentaireManagers($this->connexion->db());
     }
 }
-?>
