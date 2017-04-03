@@ -1,13 +1,9 @@
 <?php
 
-/**
- * Created by PhpStorm.
- * User: DIAZ DE CDORCUERA
- * Date: 29/03/2017
- * Time: 21:59
- */
+
 class ControlleurAPropos extends Controlleur
 {
+    // tout est statique ici.
     public function aPropos()
     {
         require 'vues/aPropos.php';

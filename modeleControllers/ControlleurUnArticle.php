@@ -4,11 +4,13 @@ class ControlleurUnArticle extends Controlleur
 {
     public function unArticle()
     {
+        //si le formulaire est soumis
         if (isset($_POST['auteur']))
         {
+            //protection injection js
             if (preg_match("#<script>#",$_POST['contenu']))
             {
-                $message = '<div class="alert alert-danger fade in"> Protection injection javascript activée!</div>';
+                $message = '<div class="alert alert-danger fade in text-center"> Protection injection javascript activée!</div>';
             }
             else {
                 $commentaire = new Commentaire(
@@ -23,10 +25,11 @@ class ControlleurUnArticle extends Controlleur
                     ]
                 );
 
+                // s'il est valide, on l'ajoute à la bdd
                 if ($commentaire->isValid()) {
                     $this->managerCom->save($commentaire);
 
-                    $message = '<div class="alert alert-success fade in">Le Commentaire a bien été ajouté !</div>';
+                    $message = '<div class="alert alert-success fade in text-center">Le Commentaire a bien été ajouté !</div>';
 
                 } else {
                     $erreurs = $commentaire->erreurs();
@@ -34,12 +37,14 @@ class ControlleurUnArticle extends Controlleur
             }
         }
 
+        //si le commentaire est signalé, on change la valeur d'un BOOL et on display un message
         if(isset($_GET['moderer']))
         {
             $this->managerCom->update();
-            $message ='<div class="alert alert-success fade in"> Merci de nous avoir signalé ce commentaire, notre équipe le supprimera si necéssaire.</div>';
+            $message ='<div class="alert alert-success fade in text-center"> Merci de nous avoir signalé ce commentaire, notre équipe le supprimera si necéssaire.</div>';
         }
 
+        // on regarde si le commentaire est une réponse
         if(isset($_GET['id_parent']))
         {
             $idParent = (int)$_GET['id_parent'];
@@ -51,6 +56,7 @@ class ControlleurUnArticle extends Controlleur
             $titreForm = 'Si vous souhaitez laisser un commentaire.';
         }
 
+        // on regarde le niveau de la réponse
         if(isset($_GET['depthParent']))
         {
             $depthParent = $_GET['depthParent'];

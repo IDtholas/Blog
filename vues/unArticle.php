@@ -10,20 +10,12 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/clean-blog.min.css" rel="stylesheet">
 
-    <!-- Custom Fonts -->
     <link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <style type="text/css">
-        #pied{ text-align: center;}
-    </style>
 </head>
         <body>
 
@@ -76,7 +68,7 @@
         <?php
         if (isset($message))
         {
-            echo '<div class="row"> <div class="col-lg-12 text-center">', $message, '<br /></div></div>';
+            echo '', $message, '<br />';
         }
         ?>
         <article>
@@ -105,13 +97,13 @@
                                     <legend> <?php echo $titreForm; ?> </legend>
                                     <fieldset>
                                         <label for="auteur">Votre nom :</label>
-                                        <?php if (isset($erreurs) && in_array(Article::AUTEUR_INVALIDE, $erreurs)) echo ' <div class="alert alert-danger fade in"> L\'auteur est invalide.</div><br />'; ?>
+                                        <?php if (isset($erreurs) && in_array(Commentaire::AUTEUR_INVALIDE, $erreurs)) echo ' <div class="alert alert-danger fade in"> L\'auteur est invalide.</div><br />'; ?>
                                         <input type="text" name="auteur" class="form-control" id="auteur">
                                         <label for="titre"> Titre du commentaire :</label>
-                                        <?php if (isset($erreurs) && in_array(Article::TITRE_INVALIDE, $erreurs)) echo '<div class="alert alert-danger fade in">Le titre est invalide.</div><br />'; ?>
+                                        <?php if (isset($erreurs) && in_array(Commentaire::TITRE_INVALIDE, $erreurs)) echo '<div class="alert alert-danger fade in">Le titre est invalide.</div><br />'; ?>
                                         <input type="text" name="titre" class="form-control" id="titre">
                                         <label for="contenu">Votre commentaire :</label>
-                                        <?php if (isset($erreurs) && in_array(Article::CONTENU_INVALIDE, $erreurs)) echo '<div class="alert alert-danger fade in">Le contenu est invalide.</div><br />'; ?>
+                                        <?php if (isset($erreurs) && in_array(Commentaire::CONTENU_INVALIDE, $erreurs)) echo '<div class="alert alert-danger fade in">Le contenu est invalide.</div><br />'; ?>
                                         <textarea id="textarea" name="contenu" id="contenu" class="form-control" rows="4"></textarea>
                                         <p class="help-block">Vous pouvez modifier la taille de la fenêtre.</p>
                                         <input type="hidden" name="depth" value="<?= $depthParent + 1 ?>" />
@@ -181,7 +173,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
-                        <a type="button" id="pied" class="btn btn-default" href="admin/indexAdmin.php?&p=1">Interface d'administration</a>
+                        <a type="button" class="btn btn-default" href="admin/indexAdmin.php?&p=1">Interface d'administration</a>
                         <ul class="list-inline text-center">
                             <li>
                                 <a href="#">
@@ -215,13 +207,11 @@
         </footer>
 
         <script src="/js/tooltip.js"></script>
-        <!-- jQuery -->
+
         <script src="js/jquery/jquery.min.js"></script>
 
-        <!-- Bootstrap Core JavaScript -->
         <script src="js/bootstrap.min.js"></script>
 
-        <!-- Theme JavaScript -->
         <script src="js/clean-blog.min.js"></script>
 
         </body>

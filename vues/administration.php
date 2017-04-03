@@ -6,29 +6,21 @@
     <meta name="description" content="Blog de Jean Forteroche">
     <meta name="author" content=" Jean Forteroche">
     <title>Interface d'administration du site</title>
+
     <link href="../css/bootstrap.css" rel="stylesheet">
     <link href="../css/clean-blog.min.css" rel="stylesheet">
 
-    <!-- Custom Fonts -->
     <link href="../fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <style type="text/css">
-        #pied{ text-align: center;}
-    </style>
 </head>
 
 <body>
 <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
     <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header page-scroll">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span>
@@ -37,7 +29,6 @@
             <a class="navbar-brand" href="../index.php">Blog de Jean Forteroche</a>
         </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
@@ -54,12 +45,9 @@
                 </li>
             </ul>
         </div>
-        <!-- /.navbar-collapse -->
     </div>
-    <!-- /.container -->
 </nav>
-<!-- Page Header -->
-<!-- Set your background image for this header on the line below. -->
+
 <header class="intro-header" style="background-image: url('../images/administrationBackground.jpg')">
     <div class="container">
         <div class="row">
@@ -81,14 +69,14 @@ if (isset($commentaire))
     '<p>', nl2br($commentaire->contenu()), '</p>', "\n";
 
 ?>
-    <a href="controlleurAdministration.php?deModerer=<?php echo $commentaire->id();?>&p=1" class="btn btn-primary"><span class="glyphicon glyphicon-ok-sign"></span> Ce commentaire est valide.</a> <a href="controlleurAdministration.php?supprimerCom=<?php echo $commentaire->id();?>&p=1" class="btn btn-danger"><span class="glyphicon glyphicon-remove-sign"></span> Supprimez le commentaire.</a> </div></br>
+    <a href="indexAdmin.php?deModerer=<?php echo $commentaire->id();?>&p=1" class="btn btn-primary"><span class="glyphicon glyphicon-ok-sign"></span> Ce commentaire est valide.</a> <a href="indexAdmin.php?supprimerCom=<?php echo $commentaire->id();?>&p=1" class="btn btn-danger"><span class="glyphicon glyphicon-remove-sign"></span> Supprimez le commentaire.</a> </div></br>
         <?php
 }
 ?>
     <?php
     if (isset($message))
     {
-        echo '<div class="row"> <div class="col-lg-12 text-center">', $message, '<br /></div></div>';
+        echo '', $message, '<br />';
     }
     ?>
     <div class="container well center-block">
@@ -179,7 +167,7 @@ if (isset($commentaire))
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
-                    <a type="button" id="pied" class="btn btn-default" href="../index.php"> Retournez à l'accueil</a>
+                    <a type="button" class="btn btn-default" href="../index.php"> Retournez à l'accueil</a>
                     <ul class="list-inline text-center">
                         <li>
                             <a href="#">
@@ -229,13 +217,10 @@ if (isset($commentaire))
             toolbar: "undo redo | bold italic underline | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | styleselect forecolor backcolor | link unlink anchor | image media | print preview code"
         });</script>
 
-    <!-- jQuery -->
     <script src="../js/jquery/jquery.min.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
     <script src="../js/bootstrap.min.js"></script>
 
-    <!-- Theme JavaScript -->
     <script src="../js/clean-blog.min.js"></script>
 </body>
 </html>

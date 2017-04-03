@@ -1,11 +1,5 @@
 <?php
 
-/**
- * Created by PhpStorm.
- * User: DIAZ DE CDORCUERA
- * Date: 20/03/2017
- * Time: 15:26
- */
 class Article
 {
     protected $erreurs = [];
@@ -41,16 +35,20 @@ class Article
         }
     }
 
+    //permet de déterminer si on ajoute un article ou si on en modifie un
     public function isNew()
     {
         return empty($this->id);
     }
 
+    // vérifie que les champs sont remplis
     public function isValid()
     {
         return !(empty($this->auteur) || empty($this->titre) || empty($this->contenu));
     }
 
+
+    // SETTERS
     public function setId($id)
     {
         $this->id = (int) $id;
@@ -102,6 +100,8 @@ class Article
         $this->dateModif = $dateModif;
     }
 
+
+    //GETTERS
 
     public function erreurs()
     {

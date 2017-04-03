@@ -9,6 +9,7 @@ class ArticleManagers
     }
 
 
+    //ajouter un article
     protected function add(Article $article)
     {
         $requete = $this->db->prepare('INSERT INTO article(auteur, titre, contenu, dateAjout, dateModif) VALUES(:auteur, :titre, :contenu, NOW(), NOW())');
@@ -20,16 +21,20 @@ class ArticleManagers
         $requete->execute();
     }
 
+    //compte les articles présents en db.
     public function count()
     {
         return $this->db->query('SELECT COUNT(*) FROM article')->fetchColumn();
     }
 
+    // supprimer un article
     public function delete($id)
     {
         $this->db->exec('DELETE FROM article WHERE id = '.(int) $id);
     }
 
+
+    // récupérer une liste d'article, param1 = début de la sélection ;  param2= nombre d'articles sélectionnés
     public function getList($debut = -1, $limite = -1)
     {
         $sql = 'SELECT id, auteur, titre, contenu, dateAjout, dateModif FROM article ORDER BY id DESC';
@@ -55,6 +60,7 @@ class ArticleManagers
         return $listeArticle;
     }
 
+    //récupérer un article via son $id
     public function getUnique($id)
     {
         $requete = $this->db->prepare('SELECT id, auteur, titre, contenu, dateAjout, dateModif FROM article WHERE id = :id');
@@ -71,6 +77,8 @@ class ArticleManagers
         return $article;
     }
 
+
+    //update de l'article en db quand modifié.
     protected function update(Article $article)
     {
         $requete = $this->db->prepare('UPDATE article SET auteur = :auteur, titre = :titre, contenu = :contenu, dateModif = NOW() WHERE id = :id');
@@ -83,6 +91,7 @@ class ArticleManagers
         $requete->execute();
     }
 
+    //ajoute ou update l'article selon la valeur du BOOL de isnew()
     public function save(Article $article)
     {
         if ($article->isValid())

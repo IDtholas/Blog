@@ -2,73 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="625d0194-b0d5-4f44-a7d9-71d742f56962" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/controlleurAdministration.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/css/clean-blog.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/css/clean-blog.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/js/clean-blog.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/js/clean-blog.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/js/contact_me.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/js/jqBootstrapValidation.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/bootstrap/css/bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/bootstrap/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/bootstrap/fonts/glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/bootstrap/fonts/glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/bootstrap/js/bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/bootstrap/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/css/font-awesome.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/css/font-awesome.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/fonts/FontAwesome.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/fonts/fontawesome-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/fonts/fontawesome-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/fonts/fontawesome-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/fonts/fontawesome-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/fonts/fontawesome-webfont.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/less/animated.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/less/bordered-pulled.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/less/core.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/less/fixed-width.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/less/font-awesome.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/less/icons.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/less/larger.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/less/list.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/less/mixins.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/less/path.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/less/rotated-flipped.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/less/screen-reader.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/less/stacked.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/less/variables.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/scss/_animated.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/scss/_bordered-pulled.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/scss/_core.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/scss/_fixed-width.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/scss/_icons.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/scss/_larger.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/scss/_list.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/scss/_mixins.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/scss/_path.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/scss/_rotated-flipped.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/scss/_screen-reader.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/scss/_stacked.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/scss/_variables.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/font-awesome/scss/font-awesome.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/jquery/jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/vendor/jquery/jquery.min.js" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/modele/mailer.php" afterPath="$PROJECT_DIR$/modele/Mailer.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/.htaccess" afterPath="$PROJECT_DIR$/admin/.htaccess" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/.htpasswd" afterPath="$PROJECT_DIR$/admin/.htpasswd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/realpath.php" afterPath="$PROJECT_DIR$/admin/realpath.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modele/Connexion.php" afterPath="$PROJECT_DIR$/modele/Connexion.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modele/Mailer.php" afterPath="$PROJECT_DIR$/modele/Mailer.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modele/article.php" afterPath="$PROJECT_DIR$/modele/article.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modele/articlemanagers.php" afterPath="$PROJECT_DIR$/modele/articlemanagers.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modele/commentaire.php" afterPath="$PROJECT_DIR$/modele/commentaire.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modele/commentairemanagers.php" afterPath="$PROJECT_DIR$/modele/commentairemanagers.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modeleControllers/Controlleur.php" afterPath="$PROJECT_DIR$/modeleControllers/Controlleur.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modeleControllers/ControlleurAPropos.php" afterPath="$PROJECT_DIR$/modeleControllers/ControlleurAPropos.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modeleControllers/ControlleurAccueil.php" afterPath="$PROJECT_DIR$/modeleControllers/ControlleurAccueil.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modeleControllers/ControlleurAdmin.php" afterPath="$PROJECT_DIR$/modeleControllers/ControlleurAdmin.php" />
@@ -96,24 +35,95 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="contact.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vues/contact.php">
+      <file leaf-file-name="commentairemanagers.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modele/commentairemanagers.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1938">
-              <caret line="132" column="86" lean-forward="false" selection-start-line="132" selection-start-column="86" selection-end-line="132" selection-end-column="86" />
+            <state relative-caret-position="1320">
+              <caret line="189" column="60" lean-forward="false" selection-start-line="189" selection-start-column="60" selection-end-line="189" selection-end-column="60" />
               <folding>
-                <element signature="e#3395#4366#0#PHP" expanded="true" />
-                <marker date="1491042527856" expanded="true" signature="2771:2793" ph="..." />
+                <marker date="1491219831866" expanded="true" signature="331:515" ph="INSERT INTO commentaire... " />
+                <marker date="1491219831866" expanded="true" signature="1092:1124" ph="SELECT COUNT... commentaire" />
+                <marker date="1491219831866" expanded="true" signature="1276:1329" ph="SELECT COUNT... commentaire" />
+                <marker date="1491219831866" expanded="true" signature="1461:1496" ph="DELETE FROM " />
+                <marker date="1491219831866" expanded="true" signature="1671:1779" ph="SELECT id, a... commentaire" />
+                <marker date="1491219831866" expanded="true" signature="2569:2752" ph="SELECT id, a... commentaire" />
+                <marker date="1491219831866" expanded="true" signature="3678:3795" ph="SELECT id, a... commentaire" />
+                <marker date="1491219831866" expanded="true" signature="4608:4670" ph="UPDATE comme... " />
+                <marker date="1491219831866" expanded="true" signature="4983:5045" ph="UPDATE comme... " />
+                <marker date="1491219831866" expanded="true" signature="5357:5507" ph="SELECT id, a... commentaire" />
+                <marker date="1491219831866" expanded="true" signature="6169:6211" ph="DELETE FROM " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Mailer.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/modele/Mailer.php">
+      <file leaf-file-name="ControlleurAdmin.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modeleControllers/ControlleurAdmin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="107" column="30" lean-forward="true" selection-start-line="107" selection-start-column="30" selection-end-line="107" selection-end-column="30" />
+            <state relative-caret-position="680">
+              <caret line="70" column="0" lean-forward="true" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="administration.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vues/administration.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1723">
+              <caret line="78" column="34" lean-forward="false" selection-start-line="78" selection-start-column="34" selection-end-line="78" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="indexAdmin.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/indexAdmin.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="accueil.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vues/accueil.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="620">
+              <caret line="91" column="24" lean-forward="true" selection-start-line="91" selection-start-column="24" selection-end-line="91" selection-end-column="24" />
+              <folding>
+                <marker date="1491073192648" expanded="true" signature="2236:2258" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="realpath.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/realpath.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Connexion.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/modele/Connexion.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ControlleurUnArticle.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modeleControllers/ControlleurUnArticle.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="518">
+              <caret line="58" column="45" lean-forward="false" selection-start-line="58" selection-start-column="45" selection-end-line="58" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -122,38 +132,8 @@
       <file leaf-file-name="Rooter.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modeleControllers/Rooter.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="8" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ControlleurContact.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modeleControllers/ControlleurContact.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="35" lean-forward="true" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="article.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modele/article.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="850">
-              <caret line="50" column="86" lean-forward="false" selection-start-line="50" selection-start-column="86" selection-end-line="50" selection-end-column="86" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".htaccess" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/.htaccess">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="8" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+            <state relative-caret-position="187">
+              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -163,17 +143,7 @@
         <entry file="file://$PROJECT_DIR$/modeleControllers/RooterAdmin.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ControlleurUnArticle.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modeleControllers/ControlleurUnArticle.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="51" lean-forward="true" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
+              <caret line="15" column="1" lean-forward="false" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -221,36 +191,36 @@
         <option value="$PROJECT_DIR$/admin/test.php" />
         <option value="$PROJECT_DIR$/indexp.php" />
         <option value="$PROJECT_DIR$/admin/administration.php" />
-        <option value="$PROJECT_DIR$/modeleControllers/Rooter.php" />
         <option value="$PROJECT_DIR$/admin/controlleurAdministration.php" />
         <option value="$PROJECT_DIR$/admin/realpath.php" />
         <option value="$PROJECT_DIR$/admin/.htpasswd" />
+        <option value="$PROJECT_DIR$/modele/Connexion.php" />
+        <option value="$PROJECT_DIR$/modeleControllers/Controlleur.php" />
+        <option value="$PROJECT_DIR$/js/tinymce/js/tinymce/plugins/filemanager/config.php" />
+        <option value="$PROJECT_DIR$/modeleControllers/RooterAdmin.php" />
+        <option value="$PROJECT_DIR$/admin/indexAdmin.php" />
+        <option value="$PROJECT_DIR$/admin/.htaccess" />
+        <option value="$PROJECT_DIR$/modele/mailer.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$USER_HOME$/Desktop/.htaccess" />
+        <option value="$PROJECT_DIR$/vues/accueil.php" />
+        <option value="$PROJECT_DIR$/vues/aPropos.php" />
+        <option value="$PROJECT_DIR$/vues/lesArticles.php" />
+        <option value="$PROJECT_DIR$/modeleControllers/Rooter.php" />
+        <option value="$PROJECT_DIR$/vues/administration.php" />
+        <option value="$PROJECT_DIR$/vues/unArticle.php" />
+        <option value="$PROJECT_DIR$/vues/contact.php" />
         <option value="$PROJECT_DIR$/modele/article.php" />
         <option value="$PROJECT_DIR$/modele/articlemanagers.php" />
         <option value="$PROJECT_DIR$/modele/commentaire.php" />
-        <option value="$PROJECT_DIR$/modele/Connexion.php" />
-        <option value="$PROJECT_DIR$/modeleControllers/Controlleur.php" />
+        <option value="$PROJECT_DIR$/modele/commentairemanagers.php" />
+        <option value="$PROJECT_DIR$/modele/Mailer.php" />
         <option value="$PROJECT_DIR$/modeleControllers/ControlleurAccueil.php" />
         <option value="$PROJECT_DIR$/modeleControllers/ControlleurAPropos.php" />
-        <option value="$PROJECT_DIR$/modeleControllers/ControlleurLesArticles.php" />
-        <option value="$PROJECT_DIR$/js/tinymce/js/tinymce/plugins/filemanager/config.php" />
-        <option value="$PROJECT_DIR$/modele/commentairemanagers.php" />
-        <option value="$PROJECT_DIR$/modeleControllers/ControlleurAdmin.php" />
-        <option value="$PROJECT_DIR$/modeleControllers/RooterAdmin.php" />
-        <option value="$PROJECT_DIR$/admin/indexAdmin.php" />
-        <option value="$PROJECT_DIR$/vues/accueil.php" />
-        <option value="$PROJECT_DIR$/vues/administration.php" />
-        <option value="$PROJECT_DIR$/admin/.htaccess" />
-        <option value="$PROJECT_DIR$/vues/lesArticles.php" />
-        <option value="$PROJECT_DIR$/vues/aPropos.php" />
-        <option value="$PROJECT_DIR$/modeleControllers/ControlleurUnArticle.php" />
-        <option value="$PROJECT_DIR$/vues/unArticle.php" />
-        <option value="$PROJECT_DIR$/modele/mailer.php" />
-        <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/vues/contact.php" />
-        <option value="$PROJECT_DIR$/modele/Mailer.php" />
         <option value="$PROJECT_DIR$/modeleControllers/ControlleurContact.php" />
-        <option value="$USER_HOME$/Desktop/.htaccess" />
+        <option value="$PROJECT_DIR$/modeleControllers/ControlleurLesArticles.php" />
+        <option value="$PROJECT_DIR$/modeleControllers/ControlleurUnArticle.php" />
+        <option value="$PROJECT_DIR$/modeleControllers/ControlleurAdmin.php" />
       </list>
     </option>
   </component>
@@ -307,49 +277,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="vues" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="p3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="p3" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modeleControllers" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="p3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="p3" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="modele" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="p3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="p3" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -516,16 +444,20 @@
       <workItem from="1490974250749" duration="853000" />
       <workItem from="1491033346607" duration="2382000" />
       <workItem from="1491036706895" duration="6846000" />
-      <workItem from="1491044446675" duration="142000" />
+      <workItem from="1491044446675" duration="1182000" />
+      <workItem from="1491065699183" duration="261000" />
+      <workItem from="1491073095323" duration="3689000" />
+      <workItem from="1491079293532" duration="75000" />
+      <workItem from="1491207331560" duration="5615000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="171823000" />
+    <option name="totallyTimeSpent" value="182503000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17864583" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -557,23 +489,11 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vues/footer.php" />
-    <entry file="file://$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/README.md" />
-    <entry file="file://$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/package.json" />
-    <entry file="file://$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/less/clean-blog.less" />
-    <entry file="file://$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/mail/contact_me.php" />
     <entry file="file://$PROJECT_DIR$/startbootstrap-clean-blog-gh-pages/gulpfile.js" />
     <entry file="file://$PROJECT_DIR$/js/tooltip.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="2" lean-forward="false" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="10" lean-forward="true" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -594,13 +514,55 @@
     <entry file="file://$PROJECT_DIR$/test.php" />
     <entry file="file://$PROJECT_DIR$/indexp.php" />
     <entry file="file://$PROJECT_DIR$/realpath.php" />
-    <entry file="file://$PROJECT_DIR$/admin/realpath.php">
+    <entry file="file://$PROJECT_DIR$/js/tinymce/js/tinymce/plugins/filemanager/config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="65" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="65" />
-          <folding>
-            <element signature="e#6#99#0#PHP" expanded="false" />
-          </folding>
+        <state relative-caret-position="391">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/controlleurAdministration.php" />
+    <entry file="file://$USER_HOME$/Desktop/Connexion.php" />
+    <entry file="file://$USER_HOME$/Desktop/.htaccess" />
+    <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/bootstrap-theme.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/clean-blog.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/clean-blog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/bootstrap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="8" lean-forward="false" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -611,10 +573,95 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vues/aPropos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="84" column="24" lean-forward="true" selection-start-line="84" selection-start-column="24" selection-end-line="84" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="2" lean-forward="true" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vues/lesArticles.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <marker date="1491073678496" expanded="true" signature="2247:2269" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vues/unArticle.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="64" column="22" lean-forward="true" selection-start-line="64" selection-start-column="22" selection-end-line="64" selection-end-column="22" />
+          <folding>
+            <marker date="1491217548785" expanded="true" signature="3963:3981" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vues/contact.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-408">
+          <caret line="63" column="0" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+          <folding>
+            <marker date="1491217665877" expanded="true" signature="2240:2262" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modele/article.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="103" column="13" lean-forward="false" selection-start-line="103" selection-start-column="13" selection-end-line="103" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modele/articlemanagers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="586">
+          <caret line="93" column="67" lean-forward="false" selection-start-line="93" selection-start-column="67" selection-end-line="93" selection-end-column="67" />
+          <folding>
+            <marker date="1491219401058" expanded="true" signature="245:358" ph="INSERT INTO article... " />
+            <marker date="1491219401058" expanded="true" signature="689:717" ph="SELECT COUNT... article" />
+            <marker date="1491219401058" expanded="true" signature="834:865" ph="DELETE FROM " />
+            <marker date="1491219401058" expanded="true" signature="1075:1160" ph="SELECT id, a... article" />
+            <marker date="1491219401058" expanded="true" signature="1874:1957" ph="SELECT id, a... article" />
+            <marker date="1491219401058" expanded="true" signature="2491:2596" ph="UPDATE artic... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/modele/commentaire.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="790">
-          <caret line="169" column="0" lean-forward="true" selection-start-line="169" selection-start-column="0" selection-end-line="169" selection-end-column="0" />
+        <state relative-caret-position="-85">
+          <caret line="124" column="17" lean-forward="false" selection-start-line="124" selection-start-column="17" selection-end-line="124" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modele/Mailer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="121" column="31" lean-forward="false" selection-start-line="121" selection-start-column="31" selection-end-line="121" selection-end-column="31" />
           <folding />
         </state>
       </provider>
@@ -629,70 +676,102 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/modeleControllers/ControlleurAccueil.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        <state relative-caret-position="85">
+          <caret line="5" column="39" lean-forward="false" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/modeleControllers/ControlleurAPropos.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="1" lean-forward="false" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        <state relative-caret-position="85">
+          <caret line="5" column="29" lean-forward="false" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/tinymce/js/tinymce/plugins/filemanager/config.php">
+    <entry file="file://$PROJECT_DIR$/modeleControllers/ControlleurContact.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        <state relative-caret-position="102">
+          <caret line="6" column="102" lean-forward="false" selection-start-line="6" selection-start-column="102" selection-end-line="6" selection-end-column="102" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modeleControllers/ControlleurLesArticles.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="84" lean-forward="false" selection-start-line="4" selection-start-column="84" selection-end-line="4" selection-end-column="84" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/modele/commentairemanagers.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="776">
-          <caret line="173" column="0" lean-forward="true" selection-start-line="173" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
+        <state relative-caret-position="1320">
+          <caret line="189" column="60" lean-forward="false" selection-start-line="189" selection-start-column="60" selection-end-line="189" selection-end-column="60" />
           <folding>
-            <marker date="1491034765333" expanded="true" signature="331:515" ph="INSERT INTO commentaire... " />
-            <marker date="1491034765333" expanded="true" signature="1063:1095" ph="SELECT COUNT... commentaire" />
-            <marker date="1491034765333" expanded="true" signature="1195:1248" ph="SELECT COUNT... commentaire" />
-            <marker date="1491034765333" expanded="true" signature="1338:1373" ph="DELETE FROM " />
-            <marker date="1491034765333" expanded="true" signature="1471:1579" ph="SELECT id, a... commentaire" />
-            <marker date="1491034765333" expanded="true" signature="2241:2424" ph="SELECT id, a... commentaire" />
-            <marker date="1491034765333" expanded="true" signature="3289:3406" ph="SELECT id, a... commentaire" />
-            <marker date="1491034765333" expanded="true" signature="4112:4174" ph="UPDATE comme... " />
-            <marker date="1491034765333" expanded="true" signature="4426:4488" ph="UPDATE comme... " />
-            <marker date="1491034765333" expanded="true" signature="4726:4876" ph="SELECT id, a... commentaire" />
-            <marker date="1491034765333" expanded="true" signature="5476:5518" ph="DELETE FROM " />
+            <marker date="1491219831866" expanded="true" signature="331:515" ph="INSERT INTO commentaire... " />
+            <marker date="1491219831866" expanded="true" signature="1092:1124" ph="SELECT COUNT... commentaire" />
+            <marker date="1491219831866" expanded="true" signature="1276:1329" ph="SELECT COUNT... commentaire" />
+            <marker date="1491219831866" expanded="true" signature="1461:1496" ph="DELETE FROM " />
+            <marker date="1491219831866" expanded="true" signature="1671:1779" ph="SELECT id, a... commentaire" />
+            <marker date="1491219831866" expanded="true" signature="2569:2752" ph="SELECT id, a... commentaire" />
+            <marker date="1491219831866" expanded="true" signature="3678:3795" ph="SELECT id, a... commentaire" />
+            <marker date="1491219831866" expanded="true" signature="4608:4670" ph="UPDATE comme... " />
+            <marker date="1491219831866" expanded="true" signature="4983:5045" ph="UPDATE comme... " />
+            <marker date="1491219831866" expanded="true" signature="5357:5507" ph="SELECT id, a... commentaire" />
+            <marker date="1491219831866" expanded="true" signature="6169:6211" ph="DELETE FROM " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modeleControllers/ControlleurUnArticle.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="518">
+          <caret line="58" column="45" lean-forward="false" selection-start-line="58" selection-start-column="45" selection-end-line="58" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modeleControllers/Rooter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modeleControllers/RooterAdmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="1" lean-forward="false" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/modeleControllers/ControlleurAdmin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1003">
-          <caret line="59" column="77" lean-forward="false" selection-start-line="59" selection-start-column="77" selection-end-line="59" selection-end-column="77" />
+        <state relative-caret-position="680">
+          <caret line="70" column="0" lean-forward="true" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/controlleurAdministration.php" />
     <entry file="file://$PROJECT_DIR$/vues/accueil.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="43" column="20" lean-forward="true" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="20" />
+        <state relative-caret-position="620">
+          <caret line="91" column="24" lean-forward="true" selection-start-line="91" selection-start-column="24" selection-end-line="91" selection-end-column="24" />
           <folding>
-            <marker date="1491035287222" expanded="true" signature="2766:2788" ph="..." />
+            <marker date="1491073192648" expanded="true" signature="2236:2258" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modele/Connexion.php">
+    <entry file="file://$PROJECT_DIR$/vues/administration.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="1" lean-forward="false" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+        <state relative-caret-position="-1723">
+          <caret line="78" column="34" lean-forward="false" selection-start-line="78" selection-start-column="34" selection-end-line="78" selection-end-column="34" />
           <folding />
         </state>
       </provider>
@@ -705,145 +784,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vues/lesArticles.php">
+    <entry file="file://$PROJECT_DIR$/admin/realpath.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="130" column="73" lean-forward="false" selection-start-line="130" selection-start-column="73" selection-end-line="130" selection-end-column="73" />
-          <folding>
-            <marker date="1491035588331" expanded="true" signature="2855:2877" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vues/aPropos.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="70" column="14" lean-forward="true" selection-start-line="70" selection-start-column="14" selection-end-line="70" selection-end-column="14" />
+        <state relative-caret-position="136">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vues/administration.php">
+    <entry file="file://$PROJECT_DIR$/modele/Connexion.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="129" column="15" lean-forward="true" selection-start-line="94" selection-start-column="8" selection-end-line="129" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modele/articlemanagers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="96" column="1" lean-forward="false" selection-start-line="96" selection-start-column="1" selection-end-line="96" selection-end-column="1" />
-          <folding>
-            <marker date="1491033508196" expanded="true" signature="220:333" ph="INSERT INTO article... " />
-            <marker date="1491033508196" expanded="true" signature="622:650" ph="SELECT COUNT... article" />
-            <marker date="1491033508196" expanded="true" signature="739:770" ph="DELETE FROM " />
-            <marker date="1491033508196" expanded="true" signature="868:953" ph="SELECT id, a... article" />
-            <marker date="1491033508196" expanded="true" signature="1628:1711" ph="SELECT id, a... article" />
-            <marker date="1491033508196" expanded="true" signature="2197:2302" ph="UPDATE artic... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modeleControllers/ControlleurLesArticles.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="1" lean-forward="false" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vues/unArticle.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="75" column="8" lean-forward="false" selection-start-line="75" selection-start-column="8" selection-end-line="80" selection-end-column="10" />
-          <folding>
-            <marker date="1491037431295" expanded="true" signature="4336:4354" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modeleControllers/Rooter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="8" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modele/article.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="50" column="86" lean-forward="false" selection-start-line="50" selection-start-column="86" selection-end-line="50" selection-end-column="86" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modeleControllers/ControlleurUnArticle.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="51" lean-forward="true" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vues/contact.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1938">
-          <caret line="132" column="86" lean-forward="false" selection-start-line="132" selection-start-column="86" selection-end-line="132" selection-end-column="86" />
-          <folding>
-            <element signature="e#3395#4366#0#PHP" expanded="true" />
-            <marker date="1491042527856" expanded="true" signature="2771:2793" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modeleControllers/ControlleurContact.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="35" lean-forward="true" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modeleControllers/RooterAdmin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/Connexion.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/.htaccess" />
-    <entry file="file://$PROJECT_DIR$/admin/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="8" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modele/Mailer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="107" column="30" lean-forward="true" selection-start-line="107" selection-start-column="30" selection-end-line="107" selection-end-column="30" />
+        <state relative-caret-position="306">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding />
         </state>
       </provider>

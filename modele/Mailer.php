@@ -34,6 +34,10 @@ class mailer
         }
     }
 
+
+    //SETTERS
+
+
     public function setNom($nom)
     {
         if (!is_string($nom) || empty($nom))
@@ -82,6 +86,8 @@ class mailer
         }
     }
 
+    //GETTERS
+
     public function nom()
     {
         return $this->nom;
@@ -113,6 +119,7 @@ class mailer
         return !(empty($this->nom) || empty($this->titre) || empty($this->email) || empty($this->message));
     }
 
+    //Fonction envoyant le mail
     public function mail()
     {
         $name = $this->nom;

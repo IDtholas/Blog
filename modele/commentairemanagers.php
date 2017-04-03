@@ -31,21 +31,29 @@ class Commentairemanagers
         $requete->execute();
     }
 
+
+    //compte les coms en db
     public function count()
     {
         return $this->db->query('SELECT COUNT(*) FROM commentaire')->fetchColumn();
     }
 
+
+    //compte les commentaires qui ont été signalés
     public function countModeration()
     {
      return $this->db->query('SELECT COUNT(*) FROM commentaire WHERE moderation = 1') ->fetchColumn();
     }
 
+
+    //supprime un commentaire par son id
     public function delete($id)
     {
         $this->db->exec('DELETE FROM commentaire WHERE id = '.(int) $id);
     }
 
+
+    //récupère les commentaires, param1=premiercom ; param2= nombre de coms
     public function getList($debut = -1, $limite = -1)
     {
         $sql = 'SELECT id, auteur, titre, contenu, dateAjout, moderation, id_parent, depth FROM commentaire ORDER BY id DESC';
@@ -70,6 +78,8 @@ class Commentairemanagers
         return $listeCommentaire;
     }
 
+
+    // selectionne les commentaires en fonction de l'id de l'article, de l'id du parent, et de la profondeur pour les réponses
     public function getListSpe($debut = -1, $limite = -1, $id_billet, $id_parent, $depth)
     {
         $sql = 'SELECT id, auteur, titre, contenu, dateAjout, moderation, id_parent, depth FROM commentaire WHERE id_billet = :id_billet AND id_parent = :id_parent AND depth = :depth ORDER BY id DESC';
@@ -97,6 +107,8 @@ class Commentairemanagers
 
         return $listeCommentaire;
     }
+
+    //récupère un commentaire spécifique pour la modération
     public function getUnique($id)
     {
         $requete = $this->db->prepare('SELECT id, auteur, titre, contenu, dateAjout, moderation, id_billet, id_parent, depth FROM commentaire WHERE id = :id');
@@ -112,6 +124,8 @@ class Commentairemanagers
         return $commentaire;
     }
 
+
+    // ajoute le commentaire à la bdd si les champs sont remplis
     public function save(Commentaire $commentaire)
     {
         if ($commentaire->isValid())
@@ -124,6 +138,8 @@ class Commentairemanagers
         }
     }
 
+
+    //permet de signaler un commentaire
     public function update()
     {
         $requete = $this->db->prepare('UPDATE commentaire SET moderation = :moderation WHERE id = :id');
@@ -134,6 +150,8 @@ class Commentairemanagers
         $requete->execute();
     }
 
+
+    //permet de désignaler un commentaire finalement valide
     public function deModerer()
     {
         $requete = $this->db->prepare('UPDATE commentaire SET moderation = :moderation WHERE id = :id');
@@ -144,6 +162,8 @@ class Commentairemanagers
         $requete->execute();
     }
 
+
+    //permet de récupérer la liste des commentaires qui ont été signalés
     public function getComModeration()
     {
         $sql = 'SELECT id, auteur, titre, contenu, dateAjout, id_billet, id_parent, depth, moderation FROM commentaire WHERE moderation = :moderation ORDER BY id DESC';
@@ -166,6 +186,8 @@ class Commentairemanagers
 
     }
 
+
+    //supprime tous les commentaires rattachés à un article.
     public function supprimerComArticle($id_billet)
     {
         $this->db->exec('DELETE FROM commentaire WHERE id_billet = '.(int) $id_billet);

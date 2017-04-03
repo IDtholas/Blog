@@ -43,10 +43,15 @@ class Commentaire
             }
         }
     }
+
+    //les champs sont remplis
     public function isValid()
     {
         return !(empty($this->auteur) || empty($this->titre) || empty($this->contenu));
     }
+
+
+    //SETTERS
 
     public function setId($id)
     {
@@ -116,6 +121,8 @@ class Commentaire
     {
         $this->depth = $depth;
     }
+
+        //GETTERS
 
     public function moderation()
     {
