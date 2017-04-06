@@ -85,17 +85,17 @@ if (isset($commentaire))
             <fieldset>
                 <div class="form-group">
                     <label for="auteur">Auteur de l'article:</label>
-                    <?php if (isset($erreurs) && in_array(Article::AUTEUR_INVALIDE, $erreurs)) echo ' <div class="alert alert-danger fade in"> L\'auteur est invalide.</div><br />'; ?>
+                    <?php echo $messageAuteurArticle; ?>
                     <input type="text" name="auteur" value="<?php if (isset($article)) echo $article->auteur(); ?>" class="form-control" id="auteur">
                 </div>
                 <div class="form-group">
                     <label for="titre">Titre de l'article:</label>
-                    <?php if (isset($erreurs) && in_array(Article::TITRE_INVALIDE, $erreurs)) echo '<div class="alert alert-danger fade in">Le titre est invalide.</div><br />'; ?>
+                    <?php echo $messageTitreArticle; ?>
                     <input type="text" name="titre" value="<?php if (isset($article)) echo $article->titre(); ?>" class="form-control" id="titre">
                 </div>
                 <div class="form-group>
                     <label for="contenu">Rédigez votre article:</label>
-                    <?php if (isset($erreurs) && in_array(Article::CONTENU_INVALIDE, $erreurs)) echo '<div class="alert alert-danger fade in">Le contenu est invalide.</div><br />'; ?>
+                <?php echo $messageContenuArticle; ?>
                     <textarea rows="17" cols="80" name="contenu" class="form-control" id="contenu"><?php if (isset($article)) echo $article->contenu(); ?></textarea>
                     <p class="help-block">Vous pouvez modifier la taille de la fenêtre.</p>
                 </div>

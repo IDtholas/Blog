@@ -1,5 +1,7 @@
 <?php
 
+namespace Controllers;
+
 class ControlleurLesArticles extends Controlleur
 {
     // on compte les articles pour déterminer la pagination, et on les listes par 5.

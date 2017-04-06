@@ -1,11 +1,7 @@
 <?php
 
-/**
- * Created by PhpStorm.
- * User: DIAZ DE CDORCUERA
- * Date: 20/03/2017
- * Time: 15:26
- */
+namespace Modele;
+
 class Commentaire
 {
     protected $erreurs = [];
@@ -102,7 +98,7 @@ class Commentaire
         }
     }
 
-    public function setDateAjout(DateTime $dateAjout)
+    public function setDateAjout(\DateTime $dateAjout)
     {
         $this->dateAjout = $dateAjout;
     }

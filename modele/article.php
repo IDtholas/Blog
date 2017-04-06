@@ -1,5 +1,7 @@
 <?php
 
+namespace Modele;
+
 class Article
 {
     protected $erreurs = [];
@@ -90,12 +92,12 @@ class Article
         }
     }
 
-    public function setDateAjout(DateTime $dateAjout)
+    public function setDateAjout(\DateTime $dateAjout)
     {
         $this->dateAjout = $dateAjout;
     }
 
-    public function setDateModif(DateTime $dateModif)
+    public function setDateModif(\DateTime $dateModif)
     {
         $this->dateModif = $dateModif;
     }

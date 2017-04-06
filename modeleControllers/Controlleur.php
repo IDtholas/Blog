@@ -1,4 +1,11 @@
 <?php
+
+namespace Controllers;
+
+use Modele\Connexion;
+use Modele\ArticleManagers;
+use Modele\CommentaireManagers;
+
 class Controlleur
 {
     protected $manager;

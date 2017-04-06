@@ -1,5 +1,9 @@
 <?php
 
+namespace Controllers;
+
+use Modele\Commentaire;
+
 class ControlleurUnArticle extends Controlleur
 {
     public function unArticle()
@@ -8,7 +12,7 @@ class ControlleurUnArticle extends Controlleur
         if (isset($_POST['auteur']))
         {
             //protection injection js
-            if (preg_match("#<script>#",$_POST['contenu']))
+            if (preg_match("#<script>#",$_POST['contenu']) || preg_match("#<script>#",$_POST['auteur']) || preg_match("#<script>#",$_POST['titre']) )
             {
                 $message = '<div class="alert alert-danger fade in text-center"> Protection injection javascript activée!</div>';
             }
@@ -16,8 +20,8 @@ class ControlleurUnArticle extends Controlleur
                 $commentaire = new Commentaire(
                     [
                         'id_billet' => $_GET['id'],
-                        'auteur' => $_POST['auteur'],
-                        'titre' => $_POST['titre'],
+                        'auteur' => htmlspecialchars($_POST['auteur']),
+                        'titre' => htmlspecialchars($_POST['titre']),
                         'contenu' => htmlspecialchars($_POST['contenu']),
                         'moderation' => 0,
                         'id_parent' => $_POST['idParent'],

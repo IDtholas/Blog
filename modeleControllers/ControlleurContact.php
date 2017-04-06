@@ -1,5 +1,9 @@
 <?php
 
+namespace Controllers;
+
+use Modele\Mailer;
+
 class ControlleurContact
 {
     public function contact()

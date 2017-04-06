@@ -1,4 +1,7 @@
 <?php
+
+namespace Controllers;
+
 class ControlleurAccueil extends Controlleur
 {
 

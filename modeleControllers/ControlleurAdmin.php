@@ -1,5 +1,9 @@
 <?php
 
+namespace Controllers;
+
+use Modele\Article;
+
 class ControlleurAdmin extends Controlleur
 {
     public function admin()
@@ -7,31 +11,33 @@ class ControlleurAdmin extends Controlleur
         //si un article a été posté.
         if (isset($_POST['auteur']))
         {
-            $article = new Article(
-                [
-                    'auteur' => $_POST['auteur'],
-                    'titre' => $_POST['titre'],
-                    'contenu' => $_POST['contenu']
-                ]
-            );
-
-            //si c'est une modification, on set l'id de l'article à modifier
-            if (isset($_POST['id']))
+            if (preg_match("#<script>#",$_POST['auteur']) || preg_match("#<script>#",$_POST['titre']) )
             {
-                $article->setId($_POST['id']);
+                $message = '<div class="alert alert-danger fade in text-center"> Protection injection javascript activée!</div>';
             }
+            else {
+                $article = new Article(
+                    [
+                        'auteur' => htmlspecialchars($_POST['auteur']),
+                        'titre' => htmlspecialchars($_POST['titre']),
+                        'contenu' => $_POST['contenu']
+                    ]
+                );
 
-            //si les champs sont remplis, on le save, et display du message correspondant
-            if ($article->isValid())
-            {
-                $this->manager->save($article);
+                //si c'est une modification, on set l'id de l'article à modifier
+                if (isset($_POST['id'])) {
+                    $article->setId($_POST['id']);
+                }
 
-                $message = $article->isNew() ? '<div class="alert alert-success fade in text-center">L article a bien été ajouté !</div>' : ' <div class="alert alert-success fade in text-center">L article a bien été modifié ! </div>';
-            }
-            //sinon, erreur
-            else
-            {
-                $erreurs = $article->erreurs();
+                //si les champs sont remplis, on le save, et display du message correspondant
+                if ($article->isValid()) {
+                    $this->manager->save($article);
+
+                    $message = $article->isNew() ? '<div class="alert alert-success fade in text-center">L article a bien été ajouté !</div>' : ' <div class="alert alert-success fade in text-center">L article a bien été modifié ! </div>';
+                } //sinon, erreur
+                else {
+                    $erreurs = $article->erreurs();
+                }
             }
         }
 
@@ -69,6 +75,32 @@ class ControlleurAdmin extends Controlleur
             $message = '<div class="alert alert-success fade in text-center"> L article a bien été supprimé !</div>';
         }
 
+        if (isset($erreurs) && in_array(Article::AUTEUR_INVALIDE, $erreurs))
+        {
+            $messageAuteurArticle = ' <div class="alert alert-danger fade in"> L\'auteur est invalide.</div><br />';
+        }
+        else
+        {
+            $messageAuteurArticle ='';
+        }
+
+        if (isset($erreurs) && in_array(Article::TITRE_INVALIDE, $erreurs))
+        {
+            $messageTitreArticle = ' <div class="alert alert-danger fade in"> Le titre est invalide.</div><br />';
+        }
+        else
+        {
+            $messageTitreArticle ='';
+        }
+
+        if (isset($erreurs) && in_array(Article::CONTENU_INVALIDE, $erreurs))
+        {
+            $messageContenuArticle = ' <div class="alert alert-danger fade in"> Le contenu est invalide.</div><br />';
+        }
+        else
+        {
+            $messageContenuArticle ='';
+        }
 
         $listeArticle = $this->manager->getList((($_GET['p'] - 1) *5), 5);
         $listeCom = $this->managerCom->getList((($_GET['p'] - 1) *5), 5);

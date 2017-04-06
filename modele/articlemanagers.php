@@ -1,9 +1,12 @@
 <?php
+
+namespace Modele;
+
 class ArticleManagers
 {
     protected $db;
 
-    public function __construct(PDO $db)
+    public function __construct(\PDO $db)
     {
         $this->db = $db;
     }
@@ -45,14 +48,14 @@ class ArticleManagers
         }
 
         $requete = $this->db->query($sql);
-        $requete->setFetchMode(PDO::FETCH_CLASS | PDO::FETCH_PROPS_LATE, 'Article');
+        $requete->setFetchMode(\PDO::FETCH_CLASS | \PDO::FETCH_PROPS_LATE, __NAMESPACE__.'\\Article');
 
         $listeArticle = $requete->fetchAll();
 
         foreach ($listeArticle as $article)
         {
-            $article->setDateAjout(new DateTime($article->dateAjout()));
-            $article->setDateModif(new DateTime($article->dateModif()));
+            $article->setDateAjout(new \DateTime($article->dateAjout()));
+            $article->setDateModif(new \DateTime($article->dateModif()));
         }
 
         $requete->closeCursor();
@@ -64,15 +67,15 @@ class ArticleManagers
     public function getUnique($id)
     {
         $requete = $this->db->prepare('SELECT id, auteur, titre, contenu, dateAjout, dateModif FROM article WHERE id = :id');
-        $requete->bindValue(':id', (int) $id, PDO::PARAM_INT);
+        $requete->bindValue(':id', (int) $id, \PDO::PARAM_INT);
         $requete->execute();
 
-        $requete->setFetchMode(PDO::FETCH_CLASS | PDO::FETCH_PROPS_LATE, 'Article');
+        $requete->setFetchMode(\PDO::FETCH_CLASS | \PDO::FETCH_PROPS_LATE, __NAMESPACE__.'\\Article');
 
         $article = $requete->fetch();
 
-        $article->setDateAjout(new DateTime($article->dateAjout()));
-        $article->setDateModif(new DateTime($article->dateModif()));
+        $article->setDateAjout(new \DateTime($article->dateAjout()));
+        $article->setDateModif(new \DateTime($article->dateModif()));
 
         return $article;
     }
@@ -86,7 +89,7 @@ class ArticleManagers
         $requete->bindValue(':titre', $article->titre());
         $requete->bindValue(':auteur', $article->auteur());
         $requete->bindValue(':contenu', $article->contenu());
-        $requete->bindValue(':id', $article->id(), PDO::PARAM_INT);
+        $requete->bindValue(':id', $article->id(), \PDO::PARAM_INT);
 
         $requete->execute();
     }
@@ -100,7 +103,7 @@ class ArticleManagers
         }
         else
         {
-            throw new RuntimeException('L article doit être valide pour être enregistrée');
+            throw new \RuntimeException('L article doit être valide pour être enregistrée');
         }
     }
 }

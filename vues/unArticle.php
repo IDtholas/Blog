@@ -97,13 +97,13 @@
                                     <legend> <?php echo $titreForm; ?> </legend>
                                     <fieldset>
                                         <label for="auteur">Votre nom :</label>
-                                        <?php if (isset($erreurs) && in_array(Commentaire::AUTEUR_INVALIDE, $erreurs)) echo ' <div class="alert alert-danger fade in"> L\'auteur est invalide.</div><br />'; ?>
+                                        <?php if (isset($erreurs) && in_array(Modele\Commentaire::AUTEUR_INVALIDE, $erreurs)) echo ' <div class="alert alert-danger fade in"> L\'auteur est invalide.</div><br />'; ?>
                                         <input type="text" name="auteur" class="form-control" id="auteur">
                                         <label for="titre"> Titre du commentaire :</label>
-                                        <?php if (isset($erreurs) && in_array(Commentaire::TITRE_INVALIDE, $erreurs)) echo '<div class="alert alert-danger fade in">Le titre est invalide.</div><br />'; ?>
+                                        <?php if (isset($erreurs) && in_array(Modele\Commentaire::TITRE_INVALIDE, $erreurs)) echo '<div class="alert alert-danger fade in">Le titre est invalide.</div><br />'; ?>
                                         <input type="text" name="titre" class="form-control" id="titre">
                                         <label for="contenu">Votre commentaire :</label>
-                                        <?php if (isset($erreurs) && in_array(Commentaire::CONTENU_INVALIDE, $erreurs)) echo '<div class="alert alert-danger fade in">Le contenu est invalide.</div><br />'; ?>
+                                        <?php if (isset($erreurs) && in_array(Modele\Commentaire::CONTENU_INVALIDE, $erreurs)) echo '<div class="alert alert-danger fade in">Le contenu est invalide.</div><br />'; ?>
                                         <textarea id="textarea" name="contenu" id="contenu" class="form-control" rows="4"></textarea>
                                         <p class="help-block">Vous pouvez modifier la taille de la fenêtre.</p>
                                         <input type="hidden" name="depth" value="<?= $depthParent + 1 ?>" />

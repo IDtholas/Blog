@@ -1,5 +1,7 @@
 <?php
 
+namespace Modele;
+
 class mailer
 {
  private $nom;

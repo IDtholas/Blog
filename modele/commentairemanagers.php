@@ -1,16 +1,12 @@
-    <?php
+<?php
 
-/**
- * Created by PhpStorm.
- * User: DIAZ DE CDORCUERA
- * Date: 20/03/2017
- * Time: 15:27
- */
-class Commentairemanagers
+namespace Modele;
+
+class CommentaireManagers
 {
     protected $db;
 
-    public function __construct(PDO $db)
+    public function __construct(\PDO $db)
     {
         $this->db = $db;
     }
@@ -64,13 +60,13 @@ class Commentairemanagers
         }
 
         $requete = $this->db->query($sql);
-        $requete->setFetchMode(PDO::FETCH_CLASS | PDO::FETCH_PROPS_LATE, 'Commentaire');
+        $requete->setFetchMode(\PDO::FETCH_CLASS | \PDO::FETCH_PROPS_LATE, __NAMESPACE__.'\\Commentaire');
 
         $listeCommentaire = $requete->fetchAll();
 
         foreach ($listeCommentaire as $commentaire)
         {
-            $commentaire->setDateAjout(new DateTime($commentaire->dateAjout()));
+            $commentaire->setDateAjout(new \DateTime($commentaire->dateAjout()));
         }
 
         $requete->closeCursor();
@@ -90,17 +86,17 @@ class Commentairemanagers
         }
 
         $requete = $this->db->prepare($sql);
-        $requete->bindValue(':id_billet', $id_billet, PDO::PARAM_INT);
-        $requete->bindValue(':id_parent', $id_parent, PDO::PARAM_INT);
-        $requete->bindValue(':depth', $depth, PDO::PARAM_INT);
+        $requete->bindValue(':id_billet', $id_billet, \PDO::PARAM_INT);
+        $requete->bindValue(':id_parent', $id_parent, \PDO::PARAM_INT);
+        $requete->bindValue(':depth', $depth, \PDO::PARAM_INT);
         $requete->execute();
-        $requete->setFetchMode(PDO::FETCH_CLASS | PDO::FETCH_PROPS_LATE, 'Commentaire');
+        $requete->setFetchMode(\PDO::FETCH_CLASS | \PDO::FETCH_PROPS_LATE, __NAMESPACE__.'\\Commentaire');
 
         $listeCommentaire = $requete->fetchAll();
 
         foreach ($listeCommentaire as $commentaire)
         {
-            $commentaire->setDateAjout(new DateTime($commentaire->dateAjout()));
+            $commentaire->setDateAjout(new \DateTime($commentaire->dateAjout()));
         }
 
         $requete->closeCursor();
@@ -112,14 +108,14 @@ class Commentairemanagers
     public function getUnique($id)
     {
         $requete = $this->db->prepare('SELECT id, auteur, titre, contenu, dateAjout, moderation, id_billet, id_parent, depth FROM commentaire WHERE id = :id');
-        $requete->bindValue(':id', (int) $id, PDO::PARAM_INT);
+        $requete->bindValue(':id', (int) $id, \PDO::PARAM_INT);
         $requete->execute();
 
-        $requete->setFetchMode(PDO::FETCH_CLASS | PDO::FETCH_PROPS_LATE, 'Commentaire');
+        $requete->setFetchMode(\PDO::FETCH_CLASS | \PDO::FETCH_PROPS_LATE, __NAMESPACE__.'\\Commentaire');
 
         $commentaire = $requete->fetch();
 
-        $commentaire->setDateAjout(new DateTime($commentaire->dateAjout()));
+        $commentaire->setDateAjout(new \DateTime($commentaire->dateAjout()));
 
         return $commentaire;
     }
@@ -134,7 +130,7 @@ class Commentairemanagers
         }
         else
         {
-            throw new RuntimeException('Le commentaire doit être valide pour être enregistré');
+            throw new \RuntimeException('Le commentaire doit être valide pour être enregistré');
         }
     }
 
@@ -144,8 +140,8 @@ class Commentairemanagers
     {
         $requete = $this->db->prepare('UPDATE commentaire SET moderation = :moderation WHERE id = :id');
 
-        $requete->bindValue(':moderation', 1, PDO::PARAM_INT);
-        $requete->bindValue(':id', $_GET['moderer'], PDO::PARAM_INT);
+        $requete->bindValue(':moderation', 1, \PDO::PARAM_INT);
+        $requete->bindValue(':id', $_GET['moderer'], \PDO::PARAM_INT);
 
         $requete->execute();
     }
@@ -156,8 +152,8 @@ class Commentairemanagers
     {
         $requete = $this->db->prepare('UPDATE commentaire SET moderation = :moderation WHERE id = :id');
 
-        $requete->bindValue(':moderation', 0, PDO::PARAM_INT);
-        $requete->bindValue(':id', $_GET['deModerer'], PDO::PARAM_INT);
+        $requete->bindValue(':moderation', 0, \PDO::PARAM_INT);
+        $requete->bindValue(':id', $_GET['deModerer'], \PDO::PARAM_INT);
 
         $requete->execute();
     }
@@ -168,16 +164,16 @@ class Commentairemanagers
     {
         $sql = 'SELECT id, auteur, titre, contenu, dateAjout, id_billet, id_parent, depth, moderation FROM commentaire WHERE moderation = :moderation ORDER BY id DESC';
         $requete = $this->db->prepare($sql);
-        $requete->bindValue('moderation', 1, PDO::PARAM_INT);
+        $requete->bindValue('moderation', 1, \PDO::PARAM_INT);
 
         $requete->execute();
-        $requete->setFetchMode(PDO::FETCH_CLASS | PDO::FETCH_PROPS_LATE, 'Commentaire');
+        $requete->setFetchMode(\PDO::FETCH_CLASS | \PDO::FETCH_PROPS_LATE, __NAMESPACE__.'\\Commentaire');
 
         $listeComModeration = $requete->fetchAll();
 
         foreach ($listeComModeration as $commentaire)
         {
-            $commentaire->setDateAjout(new DateTime($commentaire->dateAjout()));
+            $commentaire->setDateAjout(new \DateTime($commentaire->dateAjout()));
         }
 
         $requete->closeCursor();

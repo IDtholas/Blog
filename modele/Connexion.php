@@ -1,5 +1,7 @@
 <?php
 
+namespace Modele;
+
 class Connexion
 {
  protected $dbname = 'blog';
@@ -14,7 +16,7 @@ class Connexion
      $user = $this->dbuser;
      $host = $this->dbhost;
      $pass = $this->dbpass;
-     $this->db = New PDO("mysql:host=$host;dbname=$nom", $user, $pass);
+     $this->db = New \PDO("mysql:host=$host;dbname=$nom", $user, $pass);
  }
 
  public function db()
