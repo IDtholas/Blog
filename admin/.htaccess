@@ -6,3 +6,6 @@ AuthUserFile "C:\wamp64\www\p3\admin\.htpasswd"
 Require valid-user
 
 </Files>
+
+ErrorDocument 404 http://blog-ecrivain.alexandre-drabczuk.fr/index.php?action=erreur
+ErrorDocument 500 http://blog-ecrivain.alexandre-drabczuk.fr/index.php?action=erreur

@@ -6,11 +6,11 @@
     <meta name="description" content="Blog de Jean Forteroche">
     <meta name="author" content=" Jean Forteroche">
     <title>Page contact du site</title>
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/clean-blog.min.css" rel="stylesheet">
+    <link href="http://blog-ecrivain.alexandre-drabczuk.fr/css/style.css" rel="stylesheet">
+    <link href="http://blog-ecrivain.alexandre-drabczuk.fr/css/bootstrap.css" rel="stylesheet">
+    <link href="http://blog-ecrivain.alexandre-drabczuk.fr/css/clean-blog.min.css" rel="stylesheet">
 
-    <link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://blog-ecrivain.alexandre-drabczuk.fr/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
@@ -48,7 +48,7 @@
     </div>
 </nav>
 
-<header class="intro-header" style="background-image: url('images/contactBackground.jpg')">
+<header class="intro-header" style="background-image: url('http://blog-ecrivain.alexandre-drabczuk.fr/images/contactBackground.jpg')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -77,28 +77,28 @@ if (isset($message))
                     <div class="row control-group">
                         <div class="form-group col-xs-12 floating-label-form-group controls">
                             <label for="nom">Nom</label>
-                            <?php if (isset($erreurs) && in_array(Mailer::AUTEUR_INVALIDE, $erreurs)) echo ' <div class="alert alert-danger fade in"> L\'auteur est invalide.</div><br />'; ?>
+                            <?php if (isset($erreurs) && in_array(Modele\Mailer::AUTEUR_INVALIDE, $erreurs)) echo ' <div class="alert alert-danger fade in"> L\'auteur est invalide.</div><br />'; ?>
                             <input type="text" name="nom" placeholder="Nom" class="form-control" id="nom">
                         </div>
                     </div>
                     <div class="row control-group">
                         <div class="form-group col-xs-12 floating-label-form-group controls">
                             <label for="email">Email</label>
-                            <?php if (isset($erreurs) && in_array(Mailer::EMAIL_INVALIDE, $erreurs)) echo ' <div class="alert alert-danger fade in"> L\'email est invalide.</div><br />'; ?>
+                            <?php if (isset($erreurs) && in_array(Modele\Mailer::EMAIL_INVALIDE, $erreurs)) echo ' <div class="alert alert-danger fade in"> L\'email est invalide.</div><br />'; ?>
                             <input type="text" name="email" placeholder="Adresse email" class="form-control" id="email">
                         </div>
                     </div>
                     <div class="row control-group">
                         <div class="form-group col-xs-12 floating-label-form-group controls">
                             <label for="titre">Titre du message</label>
-                            <?php if (isset($erreurs) && in_array(Mailer::TITRE_INVALIDE, $erreurs)) echo ' <div class="alert alert-danger fade in"> Le titre est invalide.</div><br />'; ?>
+                            <?php if (isset($erreurs) && in_array(Modele\Mailer::TITRE_INVALIDE, $erreurs)) echo ' <div class="alert alert-danger fade in"> Le titre est invalide.</div><br />'; ?>
                             <input type="text" name="titre" placeholder="Titre du message" class="form-control" id="titre">
                         </div>
                     </div>
                     <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                     <label for="message">Message</label>
-                        <?php if (isset($erreurs) && in_array(Mailer::CONTENU_INVALIDE, $erreurs)) echo '<div class="alert alert-danger fade in">Le contenu est invalide.</div><br />'; ?>
+                        <?php if (isset($erreurs) && in_array(Modele\Mailer::CONTENU_INVALIDE, $erreurs)) echo '<div class="alert alert-danger fade in">Le contenu est invalide.</div><br />'; ?>
                     <textarea rows="5" name="message" class="form-control" placeholder="Message" id="message"></textarea>
                                 <p class="help-block text-danger"></p>
                         </div>
@@ -121,7 +121,7 @@ if (isset($message))
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
-                <a type="button" id="pied" class="btn btn-default" href="admin/indexAdmin.php?&p=1">Interface d'administration</a>
+                <a type="button" id="pied" class="btn btn-default" href="http://blog-ecrivain.alexandre-drabczuk.fr/admin/indexAdmin.php?&p=1">Interface d'administration</a>
                 <ul class="list-inline text-center">
                     <li>
                         <a href="#">
@@ -154,11 +154,11 @@ if (isset($message))
     </div>
 </footer>
 
-<script src="js/jquery/jquery.min.js"></script>
+<script src="http://blog-ecrivain.alexandre-drabczuk.fr/js/jquery/jquery.min.js"></script>
 
-<script src="js/bootstrap.min.js"></script>
+<script src="http://blog-ecrivain.alexandre-drabczuk.fr/js/bootstrap.min.js"></script>
 
-<script src="js/clean-blog.min.js"></script>
+<script src="http://blog-ecrivain.alexandre-drabczuk.fr/js/clean-blog.min.js"></script>
 
 </body>
 </html>

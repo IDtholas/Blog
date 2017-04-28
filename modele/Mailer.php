@@ -2,7 +2,7 @@
 
 namespace Modele;
 
-class mailer
+class Mailer
 {
  private $nom;
  private $titre;

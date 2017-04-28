@@ -7,8 +7,8 @@
     <meta name="author" content=" Jean Forteroche">
     <title>Interface d'administration du site</title>
 
-    <link href="../css/bootstrap.css" rel="stylesheet">
-    <link href="../css/clean-blog.min.css" rel="stylesheet">
+    <link href="http://blog-ecrivain.alexandre-drabczuk.fr/css/bootstrap.css" rel="stylesheet">
+    <link href="http://blog-ecrivain.alexandre-drabczuk.fr/css/clean-blog.min.css" rel="stylesheet">
 
     <link href="../fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
@@ -48,7 +48,7 @@
     </div>
 </nav>
 
-<header class="intro-header" style="background-image: url('../images/administrationBackground.jpg')">
+<header class="intro-header" style="background-image: url('http://blog-ecrivain.alexandre-drabczuk.fr/images/administrationBackground.jpg')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -167,7 +167,7 @@ if (isset($commentaire))
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
-                    <a type="button" class="btn btn-default" href="../index.php"> Retournez à l'accueil</a>
+                    <a type="button" class="btn btn-default" href="http://blog-ecrivain.alexandre-drabczuk.fr/index.php"> Retournez à l'accueil</a>
                     <ul class="list-inline text-center">
                         <li>
                             <a href="#">
@@ -217,10 +217,10 @@ if (isset($commentaire))
             toolbar: "undo redo | bold italic underline | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | styleselect forecolor backcolor | link unlink anchor | image media | print preview code"
         });</script>
 
-    <script src="../js/jquery/jquery.min.js"></script>
+    <script src="http://blog-ecrivain.alexandre-drabczuk.fr/js/jquery/jquery.min.js"></script>
 
-    <script src="../js/bootstrap.min.js"></script>
+    <script src="http://blog-ecrivain.alexandre-drabczuk.fr/js/bootstrap.min.js"></script>
 
-    <script src="../js/clean-blog.min.js"></script>
+    <script src="http://blog-ecrivain.alexandre-drabczuk.fr/js/clean-blog.min.js"></script>
 </body>
 </html>
